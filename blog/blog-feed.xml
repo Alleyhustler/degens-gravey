@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+    <title>Blog on manonamora's computer</title>
+    <description>Thoughts. And Dev logs</description>
+    <link>https://manonamora.neocities.org/blog/Blog-index</link>
+    <lastBuildDate>Tue, 8 June 2025 19:51:32 +0000</lastBuildDate>
+
+    <!-- Copy/Paste + fill
+    <item>
+        <title></title>
+        <link></link>
+        <pubDate></pubDate>
+        <description></description>
+    </item>
+    -->
+    
+    <item>
+        <title>Now with a Separate Feed!</title>
+        <link>https://manonamora.neocities.org/blog/Blog-index</link>
+        <pubDate>Sun, 8 June 2025</pubDate>
+        <description>The Blogs have now a separate RSS feed. I'm also slowly transferring my monthly dev-logs to this space.</description>
+    </item>
+    <item>
+        <title>On Loss and Lost Media</title>
+        <link>https://manonamora.neocities.org/blog/2025-06-03</link>
+        <pubDate>Mon, 3 June 2025</pubDate>
+        <description>Dealing with my feelings about lost files from my formative years on the internet (00s).</description>
+    </item>
+    <item>
+        <title>Notes on V3</title>
+        <link>https://manonamora.neocities.org/blog/singular/2025-05-20</link>
+        <pubDate>Wed, 27 May 2025</pubDate>
+        <description>A look back on previous versions of this website, and the move to new beginnings.</description>
+    </item>
+</channel>
+</rss> 

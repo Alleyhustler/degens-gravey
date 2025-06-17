@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+    
+<!-- Mirrored from manonamora.neocities.org/pages/sidepages/5senses by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Jun 2025 10:32:17 GMT -->
+<head>
+        <title>One, Two... 5 Senses - manonamora's computer</title>
+
+        <meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <meta name="description" content="My personal website, filled with stuff I've made and enjoy">
+        <meta name='url' content='../../index.html'>
+        <meta name='keywords' content='gamedev, interactive fiction, fiction interactive, IF, community, indie dev, twine'>
+        <meta name='language' content='EN'>
+
+        <meta property="og:title" content="manonamora.neocities.org">
+        <meta property="og:description" content="My personal website, filled with stuff I've made and enjoy">
+        <meta property="og:image" content="../../assets/titlecard.png">
+        <meta name='og:url' content='../../home/index.html'>
+
+        <meta name='pagename' content="manonamora's computer">
+        <link rel="icon" type="image/x-icon" href="../../assets/icons/mtp-logo.png">
+    </head>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font: 16px/1 monospace;
+}
+
+body {
+    position: relative;
+    background: #b59679;
+    height: calc(100vh - 6px);
+    border: 3px solid black;
+    box-shadow: inset 2px 2px #835a46, inset -2px -2px #835a46, inset -2px 2px #835a46, inset 2px -2px #835a46;
+}
+header {
+    text-align: center;
+    margin: 1em;
+}
+
+main {
+    margin: auto;
+    padding: 10px 5px;
+    max-height: 85vh;
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    flex-direction: row-reverse;
+}
+nav > div {
+    padding: 5px;
+    background: black;
+    color: yellow;
+    margin: 10px 10px 10px 0;
+    border: 3px solid;
+    border-color: #835a46 #f5f5d4 #f5f5d4 #835a46;
+    height: fit-content;
+}
+nav p {
+    font-style: italic;
+    margin-top: 5px;
+}
+nav  a {
+    color: #eae5b9;
+    text-decoration-style: dashed;
+}
+nav a:hover {
+    color: black;
+    background: beige;
+}
+
+nav ul {
+    padding-left: 1em;
+    margin: 5px 10px 10px 5px;
+}
+block {
+    width: 250px;
+    margin: 10px;
+}
+block > div {
+    margin-top: 5px;
+}
+block article {
+    width: calc(100% - 10px);
+    display: block;
+    border: 3px solid;
+    border-color: #835a46 #f5f5d4 #f5f5d4 #835a46;
+    padding: 2px;
+    margin: 5px 0;
+    color: #e9e4b9;
+}
+h3 {
+    color: yellow;
+    text-align: right;
+}
+block ul {
+    list-style: none;
+}
+main > div {
+    max-width: 606px;
+    height: calc(100% - 20px);
+    overflow: auto;
+    padding-right: 14px;
+}
+section {
+    margin-bottom: 18px;
+}
+section hr, block hr {
+    margin-bottom: -14px;
+    border: unset;
+    border-bottom: 3px dotted #9a785f;
+}
+h2 {
+    background: #b59679;
+    width: fit-content;
+    margin-bottom: 1em;
+    margin: 0 auto 8px;
+    padding: 0 11px;
+}
+article {
+    background: black;
+    color: #edeacb;
+    display: flex;
+    width: 600px;
+    border-left: 3px solid #835a46;
+    border-right: 3px solid #f5f5d4;
+}
+section > article:nth-child(3) {
+  border-top: 3px solid #835a46;
+}
+section > article:last-child {
+  border-bottom: 3px solid #f5f5d4;
+}
+section article:hover {
+    color: black;
+    background: #edeacb;
+}
+article img {
+    filter: invert(92%) sepia(7%) saturate(966%) hue-rotate(345deg) brightness(108%) contrast(86%);
+    width: 16px;
+    padding: 8px;
+    height: 16px;
+}
+section article:hover img {
+    filter: none;
+}
+
+article p {
+    padding: 5px 10px;
+}
+article > p, article > details {
+        border-left: 6px solid #b59679;
+
+}
+
+summary {
+  list-style: none;
+  display: flex;
+}
+
+summary img {
+  padding: unset;
+  width: 32px;
+  height: 32px;
+}
+
+details p {
+  border-left: none;
+}
+details > p {
+  margin: 0 10px;
+}
+
+details {
+  border-left: unset;
+}
+
+
+    </style>
+    <body>
+        <header>
+            <h1>The 5-Senses</h1>
+            <p>A collection of things that I enjoyed or made me feel things.</p>
+        </header>
+        
+        <main>
+            <block id="extra-words">
+                <hr>
+                <h2>Listses</h2>
+                <p>Of Things I Enjoy.</p>
+                <div>
+                    <article id="sight">
+                        <h3>Sight</h3>
+                        <ul>
+                            <li>Impressionist paintings</li>
+                        </ul>
+                    </article>
+                    <article id="smell">
+                        <h3>Smell</h3>
+                        <ul>
+                            <li>My Fleur d'Oranger perfume</li>
+                            <li>Fresh Petrichor</li>
+                            <li>Bread baking in the oven</li>
+                            <li>Roasted garlic</li>
+                            <li>Book Smell</li>
+                        </ul>
+                    </article>
+                    <article id="hearing">
+                        <h3>Hearing</h3>
+                        <ul>
+                            <li>Vivaldi's violins</li>
+                            <li>Bird chirping</li>
+                            <li>Citypop</li>
+                            <li>Dark Academia playlists</li>
+                            <li>80s Electronics</li>
+                        </ul>
+                    </article>
+                    <article id="taste">
+                        <h3>Taste</h3>
+                        <ul>
+                            <li>Dark Chocolate</li>
+                            <li>Pissaladière</li>
+                            <li>Burning spices</li>
+                            <li>Peach lemonade</li>
+                        </ul>
+                    </article>
+                    <article id="touch">
+                        <h3>Touch</h3>
+                        <ul>
+                            <li>Silk</li>
+                            <li>Bare skin</li>
+                            <li>Pages of an old book</li>
+                        </ul>
+                    </article>
+                    
+                </div>
+            </block>
+            <div id="five-senses-blok">
+                <section id="july-2025" style="padding-top: 11px;">
+                    <hr>
+                    <h2>July 2025</h2>
+                    <article>
+                        <img src="#" alt="">
+                        <p style="color: yellow"><em>ERROR - IMPOSSIBLE TIME - CAN'T LOAD</em></p>
+                    </article>
+                </section>
+                <section id="june-2025" style="padding-top: 11px;">
+                    <hr>
+                    <h2>June 2025</h2>
+                    <article>
+                        <img src="../../assets/icons/food.png" alt="Eating">
+                        <p>Wraps filled with minced meat, courgette, corn, bell peppers, cheese, avocado (cooked). Rhubarb and Raspberry ice cream (bought).</p>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/hands.svg" alt="Doing">
+                            <p>Bike ride through the countryside</p>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/film.png" alt="Watching">
+                        <details>
+                            <summary><p><em>Twee voor Twaalf</em> (BNNVARA, 1991-, game show)</p><img src="../../assets/icons/dotted-plus.svg" alt="Read More" title="Read More"></summary>
+                            <p><em>623 points?!?!</em> highest fucking score I've ever seen on an episode! Also a bummer no one is going for the third round.</p>
+                        </details>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/open-book.png" alt="Reading">
+                        <details>
+                            <summary><p><em>Pattern Recognition</em> (Gibson, 2003)</p><img src="../../assets/icons/dotted-plus.svg" alt="Read More" title="Read More"></summary>
+                            <p><em>Begezus, what the fuck is this book?</em> That's what I kept thinking reading it. 9/11 conspiracy meets Cold War spy meets capitalism and ads are the worst meets internet communities and rabbit hole. <em>There should always be space for coincidences.</em> Speculative fiction is great, and can be completely bonkers. I love it. I still don't know what to think of this book. <em>Conspiracies are not about you, you're just a pawn in other people's games.</em> Huge recommend. Loved the whole weird allergy to brands and the internet communities.</p>
+                        </details>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/hands.svg" alt="Doing">
+                        <details>
+                            <summary><p>Pixel art (web badges, buttons and cliques)</p><img src="../../assets/icons/dotted-plus.svg" alt="Read More" title="Read More"></summary>
+                            <p>Weirdly... calming. I'm not great at it, but it's very relaxing to do. Also making me a bit nostalgic for my teen graphic design years.</p>
+                        </details>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/musical-note.png" alt="Listening">
+                        <p><em>Bliss</em> (Muse, 2001)</p>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/open-book.png" alt="Reading">
+                        <details>
+                            <summary><p><em>The Last Man</em> (Shelley, 1826)</p><img src="../../assets/icons/dotted-plus.svg" alt="Read More" title="Read More"></summary>
+                            <p>Should have DNF'd when I stopped half-way through. Such a bore. 300 pages could have been cut out of this book. And for what? A depressing journey of someone rising through the ranks, finding love and happiness, and getting everything yanked away from him bit by bit. Somehow the last man surviving a plague? Did make me chuckle a tiny bit at times, seeing our present mirroring some scenes (which is probably why I tried to finish the book).</p>
+                        </details>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/food.png" alt="Eating">
+                        <p>Ratatouille with grilled merguez and couscous (cooked).</p>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/musical-note.png" alt="Listening">
+                        <p><em>Pinguin Radio</em></p>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/hands.svg" alt="Doing">
+                        <p>Taking walks in the forest</p>
+                    </article>
+                </section>
+                <section id="may-2025">
+                    <hr>
+                    <h2>May 2025</h2>
+                    <article>
+                        <img src="../../assets/icons/hands.svg" alt="Doing">
+                        <p><em>Moved</em></p>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/film.png" alt="Watching">
+                        <p><em>Twee voor Twaalf</em> (BNNVARA, 1991-, game show)</p>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/film.png" alt="Watching">
+                        <details>
+                            <summary><p><em>The Residence</em> (Paul William Davies, 2025, series)</p><img src="../../assets/icons/dotted-plus.svg" alt="Read More" title="Read More"></summary>
+                            <p>Only just started, but it's a DELIGHT. So many great one-lines (<em>You lost your dick?</em>). Like all the good of Agatha Christie novels. Also a Kylie Minogue fucking cameo!??!?! Can't tell who did it yet.</p>
+                        </details>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/musical-note.png" alt="Listening">
+                        <p><em>Midnight Special</em> (Fifty-Fifty, 2025)</p>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/film.png" alt="Watching">
+                        <details>
+                            <summary><p><em>May Sumo Basho</em> (NHK Japan)</p><img src="../../assets/icons/dotted-plus.svg" alt="Read More" title="Read More"></summary>
+                            <p>My boy is getting promoted!!!! Ura and Midorifuji were so disappointing. WTF was happening in the top Maegashira??? Hoshoryu pulling everyone's ass on that last day, setting up a rivalry. Asakoryu missed a prize by a hair, but great performance. Aonishki is someone to keep an eye on!</p>
+                        </details>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/food.png" alt="Eating">
+                        <p>Pissaladière (cooked).</p>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/musical-note.png" alt="Listening">
+                        <p><em>The Door</em> (Teddy Smith, 2023)</p>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/games.png" alt="Playing">
+                        <p>Idle on (World 6 unlocked)</p>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/hands.svg" alt="Doing">
+                        <details>
+                            <summary><p>Pixel art (website icons)</p><img src="../../assets/icons/dotted-plus.svg" alt="Read More" title="Read More"></summary>
+                            <p>Hands and wrists are not happy.</p>
+                        </details>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/food.png" alt="Eating">
+                        <p>Chili con carne, with lean beef ground, kidney and black beans, and roasted vegetables (red bell pepper, garlic, onions, tomatoes) (cooked).</p>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/film.png" alt="Watching">
+                        <details>
+                            <summary><p><em>Sanctuary</em> (Eguchi, 2023, series)</p><img src="../../assets/icons/dotted-plus.svg" alt="Read More" title="Read More"></summary>
+                            <p>Yeah, the dramatisation of sumo is everywhere. Enno is allowed a lot more leeway for the shit he pulls compared to real life. It's pretty cringe at the start too, but the latter episodes are much better. A good progression on the main story, as the protagonists are learning more about sumo and learning to appreciate and love it. I still can't buy that the very obviously middle-aged actor plays a 19-something kid. The female characters are pretty one-note and all of them are awful people (tbf, no one here is not terrible). Shimizu's arc was bitter sweet, Shizuuchi had the best story line (never says a word), and the hair cutting ceremony was a tear-jerker. I liked that it ended so open-ended (usually hate that!). Good for entertainment, not for a proper representation of the sport.</p>
+                        </details>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/open-book.png" alt="Reading">
+                        <p>Short stories: <em>The Billiard Ball</em> (Asimov, 1966), <em>Toys for Debbie</em> (Kyle, 1965), <em>First Contact</em> (Leinster, 1945), <em>Publish and Perish</em> (Nahin, 1978)</p>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/musical-note.png" alt="Listening">
+                        <p><em>Ken Je Dat Gevoel</em> (Suzan & Freek, 2025)</p>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/food.png" alt="Eating">
+                        <p>White fish on its bed of chorizo and cherry tomato, with a side of lemon-y and mint-y pea mash (cooked). Paired with a French rosé. Dark cocoa tiered cake (bought).</p>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/games.png" alt="Playing">
+                        <details>
+                            <summary><p><em>Baldur's Gate 3</em> (Larian Studio, 2023): Explorer Mode, Brass Dragonborn, Fighter, Karlach romance. Playthrough ongoing (Act 1 compete)</p><img src="../../assets/icons/dotted-plus.svg" alt="Read More" title="Read More"></summary>
+                            <p>Hate the combat system and its fucking spell slots and rests mechanics. Main story is a bit generic, but fine. Companions are pretty good: Karlach is such a cutie nerd, Gale is so funny at times, I get the hype about Astarion but I also don't <em>get it</em> (he's just fine). The exploration and looting is fun. It's a very gorgeous game. Still preferring <em>Pillars of Eternity</em> and <em>Divinity Original Sin</em> so far.</p>
+                        </details>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/film.png" alt="Watching">
+                        <details>
+                            <summary><p><em>Dead Dead Demon's Dededede Destruction</em> (Kurokawa, 2024, series)</p></summary>
+                            <p><em>What the Fuck was that?</em> The title and credit sequences are bonkers and so aesthetically pleasing. The story is so fucking weird and sad and sweet (give or take some moments). It's like coming-of-age meets multiverse meets apocalypse meets alien contact meets criticism of dependence on American's military? Very much friendship is magic but in a very fucked up way.</p>
+                        </details>
+                    </article>
+                </section>
+                <section id="april-2025">
+                    <hr>
+                    <h2>April 2025</h2>
+                    <article>
+                        <img src="../../assets/icons/musical-note.png" alt="Listening">
+                        <p>NPO Radio 2</p>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/open-book.png" alt="Reading">
+                        <details>
+                            <summary><p><em>Lavinia</em> (Le Guin, 2008)</p><img src="../../assets/icons/dotted-plus.svg" alt="Read More" title="Read More"></summary>
+                            <p>Had been on my to-read list for years, only got a copy recently. Maybe the best book I've read this year. I'm a sucker for Ancient Greek/Roman retelling, even more for a <em>Women being badasses and doing their thing</em>, and Le Guin is one of my favourite author ever. It's not my favourite Le Guin book, still a very good one. It was hard to put the book down, really devoured it. A forever keep.</p>
+                        </details>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/food.png" alt="Eating">
+                        <p>Traditional-style red curry with crispy seitan, pineapples, bamboo shoots, basil, green chili, red bell peppers (bought).</p>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/games.png" alt="Playing">
+                        <details>
+                            <summary><p><em>Yakuza 7 : Like a Dragon</em> (Ryu Ga Gotoku Studio, 2020): completed main story, companions, personality/"romances".</p><img src="../../assets/icons/dotted-plus.svg" alt="Read More" title="Read More"></summary>
+                            <p>Spent a couple of months on it, playing a couple of hours at a time. A very solid introduction to the new protagonist of Yakuza (a complete psychotic dumb dumb, a golden retriever with no common sense). As hilarious and silly as it is serious and heartbreaking. Twist on twist on twist. Still a bit grindy at the end, and the 2/3rd boss fight being insanely frustrating. Top 10/10 side-quests. Not super fond of the management side (very same-y), but that side-story was fun anyway. Still can't win a fucking game of shogi or mahjong to save my life.</p>
+                        </details>
+                    </article>
+                    <article>
+                        <img src="../../assets/icons/film.png" alt="Watching">
+                        <details>
+                            <summary><p><em>3 Body Problem</em> (Benioff, Weiss & Woo, 2024, series)</p><img src="../../assets/icons/dotted-plus.svg" alt="Read More" title="Read More"></summary>
+                            <p>Went into it with low expectations after seeing the last trailers. Loved the book, so always iffy about adaptations. It was... <em>just fine</em>. Didn't like the Scoobie-Doo main cast (didn't feel for them or their ordeals). The investigator was just... fine. Both actresses playing Ye Wenjie were great (best storyline)! Sophon is batshit insane but in a good way. Intrigued about the other 2 seasons, but won't hold my breath. 6/10. Decent adaptation for the Western market, though <em>eh</em> on them tacking part of Book 2 at the end.</p>
+                        </details>
+                    </article>
+                    <article>
+                        <img src="#" alt="">
+                        <p style="color: yellow"><em>ERROR - INCOMPLETE - CAN'T LOAD MORE</em></p>
+                    </article>
+                </section>
+            </div>
+            <nav>
+                <div>
+                    <p>2025</p>
+                    <ul>
+                        <li><a href="#july-2025">July</a></li>
+                        <li><a href="#june-2025">June</a></li>
+                        <li><a href="#may-2025">May</a></li>
+                        <li><a href="#april-2025">April</a></li>
+                    </ul>
+                </div>
+                <div id="lists">
+                    <p>TBD</p>
+                    <ul>
+                        <li><a href="5senses-lists.html#books">Books</a></li>
+                        <li>Music</li>
+                        <li>Movies</li>
+                        <li>Series</li>
+                        <li>Games</li>
+                        <li>Other</li>
+                    </ul>
+                </div>
+            </nav>
+        </main>
+        <img src="../../screenshot_14.html" style="width: 600px; margin-top: 17px;position: absolute; bottom: 0; display: none;">
+    </body>
+
+<!-- Mirrored from manonamora.neocities.org/pages/sidepages/5senses by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Jun 2025 10:32:20 GMT -->
+</html>

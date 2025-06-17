@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+    
+<!-- Mirrored from manonamora.neocities.org/pages/interactivefiction/games by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Jun 2025 10:32:00 GMT -->
+<head>
+        <title>Interactive Games - manonamora's computer</title>
+
+        <meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <meta name="description" content="My personal website, filled with stuff I've made and enjoy">
+        <meta name='url' content='../../index.html'>
+        <meta name='keywords' content='gamedev, interactive fiction, fiction interactive, IF, community, indie dev, twine'>
+        <meta name='language' content='EN'>
+
+        <meta property="og:title" content="manonamora.neocities.org">
+        <meta property="og:description" content="My personal website, filled with stuff I've made and enjoy">
+        <meta property="og:image" content="assets/titlecard.html">
+        <meta name='og:url' content='../../home/index.html'>
+
+        <meta name='pagename' content="manonamora's computer">
+
+        <link rel="alternate" href="../../feed.xml" type="application/rss+xml" title="manonamora's computer update log">
+        <link rel="alternate" href="../../feed.xml" type="application/atom+xml" title="manonamora's computer update log">
+
+        <link rel="icon" type="image/x-icon" href="assets/icons/mtp-logo.html">
+    </head>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    scrollbar-width: thin;
+    scrollbar-color: darkgreen transparent;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #70B0F4;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='689' height='344.5' viewBox='0 0 1600 800'%3E%3Cpath fill='%23FF95F3' d='M1102.5 734.8c2.5-1.2 24.8-8.6 25.6-7.5.5.7-3.9 23.8-4.6 24.5C1123.3 752.1 1107.5 739.5 1102.5 734.8zM1226.3 229.1c0-.1-4.9-9.4-7-14.2-.1-.3-.3-1.1-.4-1.6-.1-.4-.3-.7-.6-.9-.3-.2-.6-.1-.8.1l-13.1 12.3c0 0 0 0 0 0-.2.2-.3.5-.4.8 0 .3 0 .7.2 1 .1.1 1.4 2.5 2.1 3.6 2.4 3.7 6.5 12.1 6.5 12.2.2.3.4.5.7.6.3 0 .5-.1.7-.3 0 0 1.8-2.5 2.7-3.6 1.5-1.6 3-3.2 4.6-4.7 1.2-1.2 1.6-1.4 2.1-1.6.5-.3 1.1-.5 2.5-1.9C1226.5 230.4 1226.6 229.6 1226.3 229.1zM33 770.3C33 770.3 33 770.3 33 770.3c0-.7-.5-1.2-1.2-1.2-.1 0-.3 0-.4.1-1.6.2-14.3.1-22.2 0-.3 0-.6.1-.9.4-.2.2-.4.5-.4.9 0 .2 0 4.9.1 5.9l.4 13.6c0 .3.2.6.4.9.2.2.5.3.8.3 0 0 .1 0 .1 0 7.3-.7 14.7-.9 22-.6.3 0 .7-.1.9-.3.2-.2.4-.6.4-.9C32.9 783.3 32.9 776.2 33 770.3z'/%3E%3Cpath fill='%23FFBDA1' d='M171.1 383.4c1.3-2.5 14.3-22 15.6-21.6.8.3 11.5 21.2 11.5 22.1C198.1 384.2 177.9 384 171.1 383.4zM596.4 711.8c-.1-.1-6.7-8.2-9.7-12.5-.2-.3-.5-1-.7-1.5-.2-.4-.4-.7-.7-.8-.3-.1-.6 0-.8.3L574 712c0 0 0 0 0 0-.2.2-.2.5-.2.9 0 .3.2.7.4.9.1.1 1.8 2.2 2.8 3.1 3.1 3.1 8.8 10.5 8.9 10.6.2.3.5.4.8.4.3 0 .5-.2.6-.5 0 0 1.2-2.8 2-4.1 1.1-1.9 2.3-3.7 3.5-5.5.9-1.4 1.3-1.7 1.7-2 .5-.4 1-.7 2.1-2.4C596.9 713.1 596.8 712.3 596.4 711.8zM727.5 179.9C727.5 179.9 727.5 179.9 727.5 179.9c.6.2 1.3-.2 1.4-.8 0-.1 0-.2 0-.4.2-1.4 2.8-12.6 4.5-19.5.1-.3 0-.6-.2-.8-.2-.3-.5-.4-.8-.5-.2 0-4.7-1.1-5.7-1.3l-13.4-2.7c-.3-.1-.7 0-.9.2-.2.2-.4.4-.5.6 0 0 0 .1 0 .1-.8 6.5-2.2 13.1-3.9 19.4-.1.3 0 .6.2.9.2.3.5.4.8.5C714.8 176.9 721.7 178.5 727.5 179.9zM728.5 178.1c-.1-.1-.2-.2-.4-.2C728.3 177.9 728.4 178 728.5 178.1z'/%3E%3Cg fill='%23FFF'%3E%3Cpath d='M699.6 472.7c-1.5 0-2.8-.8-3.5-2.3-.8-1.9 0-4.2 1.9-5 3.7-1.6 6.8-4.7 8.4-8.5 1.6-3.8 1.7-8.1.2-11.9-.3-.9-.8-1.8-1.2-2.8-.8-1.7-1.8-3.7-2.3-5.9-.9-4.1-.2-8.6 2-12.8 1.7-3.1 4.1-6.1 7.6-9.1 1.6-1.4 4-1.2 5.3.4 1.4 1.6 1.2 4-.4 5.3-2.8 2.5-4.7 4.7-5.9 7-1.4 2.6-1.9 5.3-1.3 7.6.3 1.4 1 2.8 1.7 4.3.5 1.1 1 2.2 1.5 3.3 2.1 5.6 2 12-.3 17.6-2.3 5.5-6.8 10.1-12.3 12.5C700.6 472.6 700.1 472.7 699.6 472.7zM740.4 421.4c1.5-.2 3 .5 3.8 1.9 1.1 1.8.4 4.2-1.4 5.3-3.7 2.1-6.4 5.6-7.6 9.5-1.2 4-.8 8.4 1.1 12.1.4.9 1 1.7 1.6 2.7 1 1.7 2.2 3.5 3 5.7 1.4 4 1.2 8.7-.6 13.2-1.4 3.4-3.5 6.6-6.8 10.1-1.5 1.6-3.9 1.7-5.5.2-1.6-1.4-1.7-3.9-.2-5.4 2.6-2.8 4.3-5.3 5.3-7.7 1.1-2.8 1.3-5.6.5-7.9-.5-1.3-1.3-2.7-2.2-4.1-.6-1-1.3-2.1-1.9-3.2-2.8-5.4-3.4-11.9-1.7-17.8 1.8-5.9 5.8-11 11.2-14C739.4 421.6 739.9 421.4 740.4 421.4zM261.3 590.9c5.7 6.8 9 15.7 9.4 22.4.5 7.3-2.4 16.4-10.2 20.4-3 1.5-6.7 2.2-11.2 2.2-7.9-.1-12.9-2.9-15.4-8.4-2.1-4.7-2.3-11.4 1.8-15.9 3.2-3.5 7.8-4.1 11.2-1.6 1.2.9 1.5 2.7.6 3.9-.9 1.2-2.7 1.5-3.9.6-1.8-1.3-3.6.6-3.8.8-2.4 2.6-2.1 7-.8 9.9 1.5 3.4 4.7 5 10.4 5.1 3.6 0 6.4-.5 8.6-1.6 4.7-2.4 7.7-8.6 7.2-15-.5-7.3-5.3-18.2-13-23.9-4.2-3.1-8.5-4.1-12.9-3.1-3.1.7-6.2 2.4-9.7 5-6.6 5.1-11.7 11.8-14.2 19-2.7 7.7-2.1 15.8 1.9 23.9.7 1.4.1 3.1-1.3 3.7-1.4.7-3.1.1-3.7-1.3-4.6-9.4-5.4-19.2-2.2-28.2 2.9-8.2 8.6-15.9 16.1-21.6 4.1-3.1 8-5.1 11.8-6 6-1.4 12 0 17.5 4C257.6 586.9 259.6 588.8 261.3 590.9z'/%3E%3Ccircle cx='1013.7' cy='153.9' r='7.1'/%3E%3Ccircle cx='1024.3' cy='132.1' r='7.1'/%3E%3Ccircle cx='1037.3' cy='148.9' r='7.1'/%3E%3Cpath d='M1508.7 297.2c-4.8-5.4-9.7-10.8-14.8-16.2 5.6-5.6 11.1-11.5 15.6-18.2 1.2-1.7.7-4.1-1-5.2-1.7-1.2-4.1-.7-5.2 1-4.2 6.2-9.1 11.6-14.5 16.9-4.8-5-9.7-10-14.7-14.9-1.5-1.5-3.9-1.5-5.3 0-1.5 1.5-1.5 3.9 0 5.3 4.9 4.8 9.7 9.8 14.5 14.8-1.1 1.1-2.3 2.2-3.5 3.2-4.1 3.8-8.4 7.8-12.4 12-1.4 1.5-1.4 3.8 0 5.3 0 0 0 0 0 0 1.5 1.4 3.9 1.4 5.3-.1 3.9-4 8.1-7.9 12.1-11.7 1.2-1.1 2.3-2.2 3.5-3.3 4.9 5.3 9.8 10.6 14.6 15.9.1.1.1.1.2.2 1.4 1.4 3.7 1.5 5.2.2C1510 301.2 1510.1 298.8 1508.7 297.2zM327.6 248.6l-.4-2.6c-1.5-11.1-2.2-23.2-2.3-37 0-5.5 0-11.5.2-18.5 0-.7 0-1.5 0-2.3 0-5 0-11.2 3.9-13.5 2.2-1.3 5.1-1 8.5.9 5.7 3.1 13.2 8.7 17.5 14.9 5.5 7.8 7.3 16.9 5 25.7-3.2 12.3-15 31-30 32.1L327.6 248.6zM332.1 179.2c-.2 0-.3 0-.4.1-.1.1-.7.5-1.1 2.7-.3 1.9-.3 4.2-.3 6.3 0 .8 0 1.7 0 2.4-.2 6.9-.2 12.8-.2 18.3.1 12.5.7 23.5 2 33.7 11-2.7 20.4-18.1 23-27.8 1.9-7.2.4-14.8-4.2-21.3l0 0C347 188.1 340 183 335 180.3 333.6 179.5 332.6 179.2 332.1 179.2zM516.3 60.8c-.1 0-.2 0-.4-.1-2.4-.7-4-.9-6.7-.7-.7 0-1.3-.5-1.4-1.2 0-.7.5-1.3 1.2-1.4 3.1-.2 4.9 0 7.6.8.7.2 1.1.9.9 1.6C517.3 60.4 516.8 60.8 516.3 60.8zM506.1 70.5c-.5 0-1-.3-1.2-.8-.8-2.1-1.2-4.3-1.3-6.6 0-.7.5-1.3 1.2-1.3.7 0 1.3.5 1.3 1.2.1 2 .5 3.9 1.1 5.8.2.7-.1 1.4-.8 1.6C506.4 70.5 506.2 70.5 506.1 70.5zM494.1 64.4c-.4 0-.8-.2-1-.5-.4-.6-.3-1.4.2-1.8 1.8-1.4 3.7-2.6 5.8-3.6.6-.3 1.4 0 1.7.6.3.6 0 1.4-.6 1.7-1.9.9-3.7 2-5.3 3.3C494.7 64.3 494.4 64.4 494.1 64.4zM500.5 55.3c-.5 0-.9-.3-1.2-.7-.5-1-1.2-1.9-2.4-3.4-.3-.4-.7-.9-1.1-1.4-.4-.6-.3-1.4.2-1.8.6-.4 1.4-.3 1.8.2.4.5.8 1 1.1 1.4 1.3 1.6 2.1 2.6 2.7 3.9.3.6 0 1.4-.6 1.7C500.9 55.3 500.7 55.3 500.5 55.3zM506.7 55c-.3 0-.5-.1-.8-.2-.6-.4-.7-1.2-.3-1.8 1.2-1.7 2.3-3.4 3.3-5.2.3-.6 1.1-.9 1.7-.5.6.3.9 1.1.5 1.7-1 1.9-2.2 3.8-3.5 5.6C507.4 54.8 507.1 55 506.7 55zM1029.3 382.8c-.1 0-.2 0-.4-.1-2.4-.7-4-.9-6.7-.7-.7 0-1.3-.5-1.4-1.2 0-.7.5-1.3 1.2-1.4 3.1-.2 4.9 0 7.6.8.7.2 1.1.9.9 1.6C1030.3 382.4 1029.8 382.8 1029.3 382.8zM1019.1 392.5c-.5 0-1-.3-1.2-.8-.8-2.1-1.2-4.3-1.3-6.6 0-.7.5-1.3 1.2-1.3.7 0 1.3.5 1.3 1.2.1 2 .5 3.9 1.1 5.8.2.7-.1 1.4-.8 1.6C1019.4 392.5 1019.2 392.5 1019.1 392.5zM1007.1 386.4c-.4 0-.8-.2-1-.5-.4-.6-.3-1.4.2-1.8 1.8-1.4 3.7-2.6 5.8-3.6.6-.3 1.4 0 1.7.6.3.6 0 1.4-.6 1.7-1.9.9-3.7 2-5.3 3.3C1007.7 386.3 1007.4 386.4 1007.1 386.4zM1013.5 377.3c-.5 0-.9-.3-1.2-.7-.5-1-1.2-1.9-2.4-3.4-.3-.4-.7-.9-1.1-1.4-.4-.6-.3-1.4.2-1.8.6-.4 1.4-.3 1.8.2.4.5.8 1 1.1 1.4 1.3 1.6 2.1 2.6 2.7 3.9.3.6 0 1.4-.6 1.7C1013.9 377.3 1013.7 377.3 1013.5 377.3zM1019.7 377c-.3 0-.5-.1-.8-.2-.6-.4-.7-1.2-.3-1.8 1.2-1.7 2.3-3.4 3.3-5.2.3-.6 1.1-.9 1.7-.5.6.3.9 1.1.5 1.7-1 1.9-2.2 3.8-3.5 5.6C1020.4 376.8 1020.1 377 1019.7 377zM1329.7 573.4c-1.4 0-2.9-.2-4.5-.7-8.4-2.7-16.6-12.7-18.7-20-.4-1.4-.7-2.9-.9-4.4-8.1 3.3-15.5 10.6-15.4 21 0 1.5-1.2 2.7-2.7 2.8 0 0 0 0 0 0-1.5 0-2.7-1.2-2.7-2.7-.1-6.7 2.4-12.9 7-18 3.6-4 8.4-7.1 13.7-8.8.5-6.5 3.1-12.9 7.4-17.4 7-7.4 18.2-8.9 27.3-10.1l.7-.1c1.5-.2 2.9.9 3.1 2.3.2 1.5-.9 2.9-2.3 3.1l-.7.1c-8.6 1.2-18.4 2.5-24 8.4-3 3.2-5 7.7-5.7 12.4 7.9-1 17.7 1.3 24.3 5.7 4.3 2.9 7.1 7.8 7.2 12.7.2 4.3-1.7 8.3-5.2 11.1C1335.2 572.4 1332.6 573.4 1329.7 573.4zM1311 546.7c.1 1.5.4 3 .8 4.4 1.7 5.8 8.7 14.2 15.1 16.3 2.8.9 5.1.5 7.2-1.1 2.7-2.1 3.2-4.8 3.1-6.6-.1-3.2-2-6.4-4.8-8.3C1326.7 547.5 1317.7 545.6 1311 546.7z'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    margin: auto;
+}
+#container-folder {
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: -4px 9px 7px #34462c;
+    background: linear-gradient(to top, #01c601 90%, transparent 10%);
+}
+#back-folder {
+    display: block;
+    width: 250px;
+    height: 525px;
+    position: absolute;
+    top:-25px;  
+    left: 0px;
+    z-index: 0;
+    padding-top: 5px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background: url("../../assets/bgs/paper-1.png"), linear-gradient(to right, #0df10d, #01c601);
+    box-shadow: -4px 0px 7px #34462c, inset 10px -10px 10px #01c601;
+    color: darkgreen;
+    font-size: 20px;
+    text-align: center;
+}
+#back-folder h1 {
+	padding: 0.25rem 0.30rem;
+	text-transform: uppercase;
+	border-radius: 1rem;
+	font-family: 'Courier';
+	-webkit-mask-image: url('../../assets/bgs/grunge.png');
+    -webkit-mask-size: 944px 604px;
+    mix-blend-mode: multiply;
+    color: #D23;
+    border: 0.4rem double #D23;
+    transform: rotate(-6deg);
+	-webkit-mask-position: 2rem 3rem;
+    font-size: 26px;
+    line-height: 22px; 
+    width: min-content;
+    margin: 11px 22px;
+
+}
+#back-folder h1 a {
+    text-decoration: none;
+    color: purple;
+}
+#container-folder::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 460px;
+  height: 100px;
+  background: #01c601;
+  border-radius: 0 30px;
+  top: 5px;
+  box-shadow: -4px 0px 7px #34462c;
+  right: 0;
+  background-image: url("../../assets/bgs/paper-1.png");
+}
+nav {
+    height: 100px;
+    z-index: 1;
+    position: absolute;
+    margin-top: 15px;
+    right: 10px;
+    display: flex;
+    margin-right: 8px;
+    font-size: 16px;
+    font-family: 'Courier';
+}
+nav a {
+    padding: 10px 4px 10px 11px;
+    background: #0F59A8;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    width: fit-content;
+    transition: all 0.6s;
+    top: 0;
+    margin-right: 10px;
+    border-radius: 5px 0;
+    box-shadow: -3px 1px 15px #000000d6;
+    text-shadow: 0 0 4px black;
+    color: white;
+    text-decoration: none;
+}
+#link-experiment {
+  background: #8c0505;
+}
+#link-guide {
+  background: #c105a4;
+}
+#link-asset {
+  background: #4b059f;
+}
+nav a::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  right: -20px;
+  background: inherit;
+  top: 0px;
+  clip-path: polygon(0 0, 30% 0%, 100% 100%, 0% 100%);
+}
+nav a:hover {
+  top: -10px;
+}
+nav a.hovered {
+    top: -10px;
+    z-index: 1;
+}
+main {
+    width: calc(100% - 15px);
+    height: 445px;
+    position: absolute;
+    bottom:0;
+    background: lime;
+    clip-path: polygon(7% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+    z-index: 3;
+    border-radius: 0 14px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    box-sizing: border-box;
+    margin-left: 8px;
+    margin-bottom: 5px;
+    margin-top: 61px;
+    z-index: 2;
+    background: white;
+    box-shadow: inset 0 0 10px grey;
+}
+main::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 46px;
+    background: #e8e88f;
+    box-shadow: 0 0 10px gray;
+    border-radius: 0 0 8px 0;
+}
+main h2 {
+    margin: 15px 10px 0px;
+    text-align: right;
+    font-size: 2em;
+}
+main > p {
+    text-align: right;
+    padding: 0 15px 3px;
+    border-bottom: 1px solid #05ff05;
+}
+section {
+    flex-grow: 1;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    border-radius: 0 0 30px 30px;
+    padding-bottom: 5px;
+    background: linear-gradient(to top right, lime -50%, transparent 36%), linear-gradient(to bottom left, lime -50%, transparent 36%);
+    border-top: 1px solid darkgreen;
+}
+article {
+    width: 48%;
+    overflow: auto;
+}
+#titles {
+    padding-right: 2%;
+    padding-left: 10px;
+  padding-bottom: 5px;
+}
+#titles h3 {
+    color: #013701;
+    text-shadow: 0 0 10px #8eff8e;
+    margin: 7px 0;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+#titles hr {
+    border: unset;
+    border-bottom: 4px dotted darkgreen;
+    margin-top: 5px;
+}
+
+#info {
+    margin-left: 1%;
+    padding: 1%;
+}
+#info img {
+    border: 1px solid darkgreen;
+    box-shadow: 0 0 7px #013701;
+}
+#info h3 {
+    text-align: center;
+}
+#info blockquote {
+    padding: 5px 5px 5px 15px;
+    font-style: italic;
+}
+#info strong {
+    display: block;
+    text-align: right;
+  font-size: 14px;
+}
+
+.flexed {
+    display: flex;
+  flex-wrap: wrap;
+}
+.hidden {
+    display: none;
+}
+.active {
+    display: block;
+}
+.click {
+    cursor: pointer;
+    font-size: 12px;
+    width: 100px;
+    margin: 5px 2px;
+    display: block;
+    margin: 5px 2px 0;
+}
+.click > * {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.click > img {
+    width: 25px;
+    height: 25px;
+    margin: 0 calc(75px / 2);
+}
+
+    </style>
+    <body>
+        <div id="container-folder">
+            <div id="back-folder"><h1><a href="ifprojects.html">Interactive Fiction</a></h1></div>
+            <nav>
+                <a id="link-games" href="#" class="hovered">Games</a>
+                <a id="link-experiment" href="miscellaneous.html">Miscellaneous</a>
+                <a id="link-guide" href="guides.html">Guides & Templates</a>
+                <a id="link-asset" href="assets.html">Assets</a>
+            </nav>
+            <main>
+                <h2>Games</h2>
+                <p>Here, you will find all my Interactive Fiction games. <br>
+                    They are organised in two categories: <em>Completed Works</em> and <em>Works-in-Progress</em>.
+                </p>
+                <section>
+                    <article id="titles">
+                        <h3>Completed Works</h3>
+                        <div id="completed" class="flexed">
+                            <div id="collision" class="click" onclick="showDescription('collision-info')" title="COLLISION">
+                                <img src="../../assets/icons/collision.png" alt="logo">
+                                <span>COLLISION</span>
+                            </div>
+                            <div id="dolos" class="click" onclick="showDescription('dolos-info')">
+                                <img src="../../assets/icons/dolos-logo.svg" alt="" style="filter: invert(39%) sepia(89%) saturate(581%) hue-rotate(84deg) brightness(87%) contrast(105%);">
+                                <span>DOL-OS</span>
+                            </div>
+                            <div id="edoc"  class="click" onclick="showDescription('edoc-info')">
+                                <img src="../../assets/icons/egg-logo.png" alt="">
+                                <span>Entre-d’œufs coquilles</span>
+                            </div>
+                            <div id="goncharov"  class="click" onclick="showDescription('goncharov-info')">
+                                <img src="../../assets/icons/gonch-logo.png" alt="">
+                                <span>Goncharov Escapes!</span>
+                            </div>
+                            <div id="blink-eye"  class="click" onclick="showDescription('blink-eye-info')">
+                                <img src="../../assets/icons/eye-logo.png" alt="">
+                                <span>In the Blink of an Eye</span>
+                            </div>
+                            <div id="incombustible"  class="click" onclick="showDescription('incombustible-info')">
+                                <img src="../../assets/icons/incombustible-logo.png" alt="">
+                                <span>L’Incombustible 3000</span>
+                            </div>
+                            <div id="jeangille"  class="click" onclick="showDescription('jeangille-info')">
+                                <img src="../../assets/icons/jeangille.png" alt="">
+                                <span>Les Lettres du Docteur Jeangille</span>
+                            </div>
+                            <div id="lysidice"  class="click" onclick="showDescription('lysidice-info')">
+                                <img src="../../assets/icons/lysidice-logo.png" alt="">
+                                <span>Lysidice and the Minotaur</span>
+                            </div>
+                            <div id="machina"  class="click" onclick="showDescription('machina-info')">
+                                <img src="../../assets/icons/machina-logo.png" alt="">
+                                <span>machina caerulea</span>
+                            </div>
+                            <div id="meeting"  class="click" onclick="showDescription('meeting-info')">
+                                <img src="../../assets/icons/mtp-logo.png" alt="">
+                                <span>Meeting the Parents</span>
+                            </div>
+                            <div id="sad-meal"  class="click" onclick="showDescription('sad-meal-info')">
+                                <img src="../../assets/icons/sad-mea-logo.png" alt="">
+                                <span>Not Another Sad Meal</span>
+                            </div>
+                            <div id="not-strangers"  class="click" onclick="showDescription('not-strangers-info')">
+                                <img src="../../assets/icons/stranger-logo.png" alt="">
+                                <span>(not so) strangers in the night</span>
+                            </div>
+                            <div id="la-mort"  class="click" onclick="showDescription('la-mort-info')">
+                                <img src="../../assets/icons/lpm-logo.png" alt="">
+                                <span>La Petite Mort</span>
+                            </div>
+                            <div id="roads-taken"  class="click" onclick="showDescription('roads-taken-info')">
+                                <img src="../../assets/icons/road-logo.png" alt="">
+                                <span>The Roads not Taken</span>
+                            </div>
+                            <div id="sps-ih"  class="click" onclick="showDescription('sps-ih-info')">
+                                <img src="../../assets/icons/sps-logo.png" alt="">
+                                <span>SPS Iron Hammer</span>
+                            </div>
+                            <div id="teatime"  class="click" onclick="showDescription('teatime-info')">
+                                <img src="../../assets/icons/vamp-logo.png" alt="">
+                                <span>Teatime with a Vampire</span>
+                            </div>
+                            <div id="tavern"  class="click" onclick="showDescription('tavern-info')">
+                                <img src="../../assets/icons/tttt-logo.png" alt="">
+                                <span>The Thick Table Tavern</span>
+                            </div>
+                            <div id="harcourt"  class="click" onclick="showDescription('harcourt-info')">
+                                <img src="../../assets/icons/harcourt-logo.png" style="filter:brightness(0);" alt="">
+                                <span>The Trials and Tribulations of Edward Harcourt</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <h3>Works-in-Progress</h3>
+                        <div id="wip" class="flexed">
+                            <div id="crwl"  class="click" onclick="showDescription('crwl-info')">
+                                <img src="../../assets/icons/crwl-logo.png" alt="">
+                                <span>Crimson Rose & White Lily</span>
+                            </div>
+                            <div id="dinner"  class="click" onclick="showDescription('dinner-info')">
+                                <img src="../../assets/icons/dinner-logo.png" alt="">
+                                <span>The Dinner</span>
+                            </div>
+                            <div id="cadaver"  class="click" onclick="showDescription('cadaver-info')">
+                                <img src="../../assets/icons/ec-logo.png" alt="">
+                                <span>Exquisite Cadaver</span>
+                            </div>
+                            <div id="prix"  class="click" onclick="showDescription('prix-info')">
+                                <img src="../../assets/icons/prix-logo.png" alt="">
+                                <span>P-Rix - Space Trucker</span>
+                            </div>
+                            <div id="rye"  class="click" onclick="showDescription('rye-info')">
+                                <img src="../../assets/icons/rye-logo.png" alt="">
+                                <span>The Rye in the Dark City</span>
+                            </div>
+                            <div id="fia" class="click" onclick="showDescription('fia-info')">
+                                <img src="../../assets/icons/fia-logo.png" alt="">
+                                <span>The FIA Series</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="info">
+                        <div id="no-info" class="hidden active">
+                            <p>Click a title to display info</p>
+                            <p>For release or update announcements see contact list.</p>
+                        </div>
+                        <div id="collision-info" class="hidden">
+                            <img src="../../assets/titles/collision-title-thin.png" alt="black and yellow checkered header with the title Collision" title="Collision">
+                            <strong>Open your Eyes, and Do Something... Anything...</strong>
+                            <blockquote>Strange designs over your body, fingers attached to a wheel, and a vehicle approaching fast. An imminent crash. Will you manage to make it out alive?</blockquote>
+                            <p><em>Collision</em> (2023) is a short horror interactive games created for the <em>Neo Twiny Jam</em>, written with less then 300 words.</p>
+                            <a href="games/collision.html">Read more...</a>  
+                        </div>
+                        <div id="dolos-info" class="hidden">
+                            <img src="../../assets/titles/dolos-title-thin.png" alt="dark and light green stripped background with the white title DOL-OS" title="DOL-OS">
+                            <strong>Will you find the truth inside this old computer?</strong>
+                            <blockquote>Year 3XXX. In some ruins, you’ve found an old computer, one of those antique pieces you’d see in museums. Strangely, the device still powers up when you press its buttons. Wonder what you could find within its files?</blockquote>
+                            <p><em>DOL-OS</em> (2023) is a sci-fi interactive game, the winning entry of the 2023 edition of the <em>Concours de Fiction Interactive Francophone</em>, and awarded <em>Oustanding French Game</em> at the <em>IFDB Awards</em>.</p>
+                            <a href="games/dolos.html">Read more...</a> 
+                        </div>
+                        <div id="edoc-info" class="hidden">
+                            <img src="../../assets/titles/edoc-title-thin.png" alt="light blue background with two sunny-side-up egg drawing, with the orange title Entre-d'oeufs coquilles" title="Entre-d’œufs coquilles">
+                            <h4>Translation: <em>An Eggcellent Preparation</em></h4>
+                            <strong>How will you rise to the occasion?</strong>
+                            <blockquote>Clio, the pretty milkmaid has been organising a special day for the past weeks: one to celebrate the anniversary of your first date. But you won't arrive empty handed...</blockquote>
+                            <p><em>Entre-d’œufs coquilles</em> (2023) is a short slice-of-life parser, my first proper try into the genre, created for <em>La Sens Dessus Dessous</em> and translated for the <em>Text Adventure Literacy Jam</em></p>
+                            <a href="games/edoc.html">Read more...</a>
+                        </div>
+                        <div id="goncharov-info" class="hidden">
+                            <img src="../../assets/titles/goncharov-title-thin.png" alt="dark green background spotted with old pocket watches, with the title Goncharov Escapes!" title="Goncharov Escapes!">
+                            <strong>Time waits for no one...</strong>
+                            <blockquote>When a meeting with the local Don goes haywire, thwarting your well-crafted plan, you are forced into a car chase to save your... well, Goncharov's life.</blockquote>
+                            <p><em>Goncharov Escapes</em> (2022) is a short car-chase interactive game, created for the <em>One-Button Jam</em> and the <em>Goncharov Jam</em>, using a Quick-Time-Events mechanic.</p>
+                            <a href="games/goncharov.html">Read more...</a>
+                        </div>
+                        <div id="blink-eye-info" class="hidden">
+                            <img src="../../assets/titles/blink-eye-title-thin.png" alt="black and yellow checkered header with the title Collision" title="In the Blink of an Eye">
+                            <strong>A single blink will change your life.</strong>
+                            <blockquote>Santana’s breath cut short at the sight of the barrel pointed at him. The gun, though small, was nonetheless loaded and still smelt of burnt powder. He heard a... <b>Click</b>.</blockquote>
+                            <p><em>In the Blink of an Eye</em> (2023) is a short spooky interactive story, made under 4h for the <em>EctoComp</em>, with an unaltered interface for the <em>Bare-Bones Jam</em>, and written in Ink for the <em>inkJam</em>.</p>
+                            <a href="games/blink-eye.html">Read more...</a>
+                        </div>
+                        <div id="incombustible-info" class="hidden">
+                            <h3>L’Incombustible 3000</h3>
+                            <strong>When bad gets worse...</strong>
+                            <blockquote>A dangerous asteroid field behind you, a black hole right in front. All would be fine if your eponymous ship didn't just break down. Will you manage to repair it before it is too late?</blockquote>
+                            <p><em>L’Incombustible 3000</em> (2024) is a puzzle-based IF game made in Twine, created in a weekend for the <em>Nouvim3000</em> and <em>La Marmelade</em>, and related to <em>P-Rix - Space Trucker</em>. It is currently only available in French.</p>
+                            <a href="games/incombustible.html">Read more...</a>
+                        </div>
+                        <div id="jeangille-info" class="hidden">
+                            <h3>Les lettres du Docteur Jeangille</h3>
+                            <h4>Translation: <em>Doctor Jeangille's Letters</em></h4>
+                            <strong>When mundane actions have great consequences...</strong>
+                            <blockquote>Forced to settle in the quiet village of Meaux, the life of Doctor Jeangille falls into turmoils. Exchanging with Olympia, the lover, this recluse person comes to life, entangled in peculiar and mysterious events.</blockquote>
+                            <p><em>Les lettres du Docteur Jeangille</em> (2024) is an epistolary interactive game created for the <em>Concours de Fiction Interactive Francophone</em>, and was translated into English a month later for <em>SpringThing</em>. It was awarded <em>Oustanding French Game</em> at the <em>IFDB Awards</em>.</p>
+                            <a href="games/jeangille.html">Read more...</a>
+    
+                        </div>
+                        <div id="lysidice-info" class="hidden">
+                            <h3>Lysidice and the Minotaur</h3>
+                            <strong>Can you escape the labyrinth?</strong>
+                            <blockquote>You are Lysidice, a young Athenian maiden prisoner of the Labyrinth. Though you are under the protection of the Minotaur, you know your luck is bound to run out. And when he shows up...</blockquote>
+                            <p><em>Lysidice and the Minotaur</em> (2024) is a parser escape adventure made in Adventuron for the <em>Text Adventure Literacy Jam</em>, where it ranked 3<sup>rd</sup>. It is based on the Greek myth of the Minotaur.</p>
+                            <a href="games/lysidice.html">Read more...</a>
+                        </div>
+                        <div id="machina-info" class="hidden">
+                            <h3>machina caerulea</h3>
+                            <strong>Hello, Blanche.</strong>
+                            <blockquote>Do you remember what happened? No... Well... That's fine.</blockquote>
+                            <p><em>machina caerulea</em> (2024) is a short IF game inspired by the Bluebeard folktale, and made for the <em>Neo-Twiny Jam</em>, the <em>Bluebeard Jam</em>, the <em>Love/Violence Jam</em> and the <em>Anti-Romance Jam</em>.</p>
+                            <a href="games/machina.html">Read more...</a>
+                        </div>
+                        <div id="meeting-info" class="hidden">
+                            <h3>Meeting the Parents</h3>
+                            <strong>Will you light a fire in the Sparks' heart?</strong>
+                            <blockquote>Among the important milestones of a relationship, meeting your partner's family for the first time might be the most stressful. Will your manners be up to par? Or will you make a fool of yourself?</blockquote>
+                            <p><em>Meeting the Parents</em> (2021) is a slice-of-life interactive story, and my first attempt at creating an Interactive Fiction game.</p>
+                            <a href="games/meeting-parents.html">Read more...</a>
+                        </div>
+                        <div id="not-strangers-info" class="hidden">
+                            <img src="../../assets/titles/not-strangers-title-thin.png" alt="purple night sky, dark forest of tree, white title showing (not so) strangers in the night" title="(not so) strangers in the night">
+                            <strong>What could go wrong with pretending to be strangers...?</strong>
+                            <blockquote>Zach and Irene decided to play a little game tonight. Will they break the rules?</blockquote>
+                            <p><em>(not so) strangers in the night</em> (2024) is a short slice-of-life interactive game made for the <em>ShuffleComp</em>, the <em>SeedComp!</em> and the <em>Zach Jam</em>, using POV switches to tell the story.</p>
+                            <a href="games/not-strangers.html">Read more...</a>
+                        </div>
+                        <div id="sad-meal-info" class="hidden">
+                            <h3>Not Another Sad Meal</h3>
+                            <strong>Cursed? Healthy? Fancy? Which dish will you make?</strong>
+                            <blockquote>After a difficult breakup, and a long night of drinking, you decide to take your life back and put things back in order. Starting with a simple meal. Treat yourself!</blockquote>
+                            <p><em>Not Another Sad Meal</em> (2024) is a short slice-of-life cooking simulator in a parser form, made in Adventuron for the <em>Recipe Jam</em> and the <em>SeedComp!</em>.</p>
+                            <a href="games/not-sad-meal.html">Read more...</a>
+                        </div>
+                        <div id="la-mort-info" class="hidden">
+                            <h3>La Petite Mort</h3>
+                            <strong>Explore the house and uncover your grandmother's secrets.</strong>
+                            <blockquote>Help Suzette, an eight year old, getting ready to meet her peculiar grandmother for an outing that afternoon at her as-peculiar job.</blockquote>
+                            <p><em>La Petite Mort</em> (2022) is a short slice-of-life interactive puzzle first created under 4h for the French Edition of the <em>EctoComp</em>, winning first place. It was translated in English for the following edition.</p>
+                            <a href="games/petite-mort.html">Read more...</a>
+                        </div>
+                        <div id="roads-taken-info" class="hidden">
+                            <h3>The Roads Not Taken</h3>
+                            <strong>The Ritual awaits...</strong>
+                            <blockquote>Are you ready to make your choice? The one that will shape the rest of your life? Or will regret the roads not taken?</blockquote>
+                            <p><em>The Roads Not Taken</em> (2023) is a sci-fi parser game created in Twine (not a parser engine) for the <em>Spring Thing</em>.</p>
+                            <a href="games/roads-not-taken.html">Read more...</a>
+                        </div>
+                        <div id="sps-ih-info" class="hidden">
+                            <h3>SPS Iron Hammer</h3>
+                            <strong>Welcome on board!</strong>
+                            <blockquote>Your content life aboard the <b>SPS Iron Hammer</b> is disrupted with the awakening of a new crew member, and his erratic behaviour. A worrisome truth plagues you: the young man is the only person remembering his life prior to his arrival.</blockquote>
+                            <p><em>SPS Iron Hammer</em> (2022) is a short sci-fi mystery interactive story set aboard the titular spaceship, and was created for the <em>Interact-IF Game Jam</em>.</p>
+                            <a href="games/sps-ih.html">Read more...</a>
+    
+                        </div>
+                        <div id="teatime-info" class="hidden">
+                            <h3>Teatime with a Vampire</h3>
+                            <strong>Will you take the hand and play along?</strong>
+                            <blockquote>Eir life is slipping away. Ey is forever stuck on this couch, flipping through the channels. But Alex's life will never be the same after tonight. A chance encounter, or a surreal experience, will push em to have tea with a particular vampire... Or will ey?</blockquote>
+                            <p><em>Teatime with a Vampire</em> (2024) is a horror/surreal interactive game make in Twine for the <em>Smoochie Jam</em> and the <em>Queer Vampire Jam</em>.</p>
+                            <a href="games/teatime-vamp.html">Read more...</a>
+                        </div>
+                        <div id="tavern-info" class="hidden">
+                            <h3>The Thick Table Tavern</h3>
+                            <strong>Mix some drinks, talk to patrons, collect coins!</strong>
+                            <blockquote>Become a bartender to fund your dreams, serving the <b>Thick Table</b> tavern's patrons, and maybe change their lives...</blockquote>
+                            <p><em>The Thick Table Tavern</em> (2022) is a fantasy slice-of-life interactive bartending game, made in Twine for the 2022 Edition of the <em>IFComp</em></p>
+                            <a href="games/thick-table-tavern.html">Read more...</a>
+                        </div>
+                        <div id="harcourt-info" class="hidden">
+                            <h3>The Trials and Tribulations of Edward Harcourt</h3>
+                            <strong>It all started with a letter...</strong>
+                            <blockquote>Invited to Castle Gairbuie by an old but never forgotten acquaintance, the titular Edward Harcourt, you are thrust into a strange and dangerous mystery...</blockquote>
+                            <p><em>The Trials and Tribulations of Edward Harcourt</em> (2022-2025) is a Lovecraftian horror interactive story, and a collaborative effort between writer MelS and myself. The story was completed in late April 2025.</p>
+                            <a href="games/harcourt.html">Read more...</a>
+                        </div>
+                        <div id="crwl-info" class="hidden">
+                            <h3>Crimson Rose & White Lily</h3>
+                            <strong>How will you fare in this strange land?</strong>
+                            <blockquote>Waking up in a strange place, among strangers, and without a single memory, you must learn to navigate this new world, its inhabitants, and its intrigues... will these new faces be friends or foes?</blockquote>
+                            <p><em>Crimson Rose & White Lily</em> (2021- ) is an ongoing interactive court intrigue story, taking inspiration from the Victorian Era and the 18<sup>th</sup> century French Court. It currently counts 4 chapters.</p>
+                            <a href="games/crwl.html">Read more...</a>
+                        </div>
+                        <div id="dinner-info" class="hidden">
+                            <h3>The Dinner</h3>
+                            <strong>Eat... at your own risk.</strong>
+                            <blockquote>An eerie foodie experience.</blockquote>
+                            <p><em>The Dinner</em> (2023) is a short interactive story created for the <em>Single Choice Jam</em> and the <em>Orifice Jam</em>, using the restrictive gameplay to create an eerie food experience. 1/3<sup>rd</sup> of the dinner is actually complete.</p>
+                            <a href="games/dinner.html">Read more...</a>
+                        </div>
+                        <div id="cadaver-info" class="hidden">
+                            <h3>Exquisite Cadaver</h3>
+                            <strong>A Surrealist Interactive Game!</strong>
+                            <blockquote>Set in the 1920s in Paris, three artists share some drinks, gossips, and an afternoon trying out a new game: the <b>cadavre exquis</b>.</blockquote>
+                            <p><em>Exquisite Cadaver</em> (2021-) is a surrealist interactive game, whose gameplay is based on the French game 'cadavre exquis', a creative game where players build a sentence word by word, unaware of the others' addition. The demo currently includes 1/3<sup>rd</sup> of the final game.</p>
+                            <a href="games/exquisite-cadaver.html">Read more...</a>
+                        </div>
+                        <div id="prix-info" class="hidden">
+                            <h3>P-Rix - Space Trucker</h3>
+                            <strong>Braving through dangerous star systems for a paycheck!</strong>
+                            <blockquote>Play as the eponymous P-Rix, a space trucker on a delivery mission for a mysterious Mr. E. and his as-mysterious cargo. Unfortunately, the voyage won't ba as simple as planned...</blockquote>
+                            <p><em>P-Rix - Space Trucker</em> (2022-) is an ongoing sci-fi slice-of-life interactive game set in deep space, created for the <em>Two-Button Jam</em> and the <em>Twine Sci-Fi Jam</em>. The demo currently comprises of the introduction.</p>
+                            <a href="games/prix.html">Read more...</a>
+                        </div>
+                        <div id="rye-info" class="hidden">
+                            <h3>The Rye in the Dark City</h3>
+                            <strong>The messiest case to ever cross your desk!</strong>
+                            <blockquote>Follow Detective Rye, a down-on-the-luck P.I., coming across a very peculiar case. What dark secrets will you uncover?</blockquote>
+                            <p><em>The Rye in the Dark City</em> (2023- ) is an ongoing noir mystery interactive game create for the <em>SeedComp!</em>. The demo currently only includes the 1<sup>st</sup> act.</p>
+                            <a href="games/the-rye.html">Read more...</a>
+                        </div>
+                        <div id="fia-info" class="hidden">
+                            <h3>The FIA Series</h3>
+                            <strong>F1X-1T-4LL to the rescue!</strong>
+                            <blockquote>In Pre-Development.</blockquote>
+                            <p><em>The FIA Series</em> (2024- ) is an ongoing series of parsers following a little robot fixing appliances. The goal of this series is to create short parser games with simple commands and puzzles to introduce new players to the genre.</p>
+                            <a href="games/fia.html">Read more...</a>
+                        </div>
+                    </article>
+                </section>
+            </main>
+        </div>
+        <footer>© manonamora ~ 2022-2025</footer>
+        <script>
+            function showDescription(id) {
+                var elems = document.querySelectorAll(".active");
+                [].forEach.call(elems, function(el) {
+                    el.classList.remove("active");
+                });
+                var descriptionToShow = document.getElementById(id)
+                descriptionToShow.classList.add("active");
+            }
+        </script>
+    </body>
+
+<!-- Mirrored from manonamora.neocities.org/pages/interactivefiction/games by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Jun 2025 10:32:09 GMT -->
+</html>

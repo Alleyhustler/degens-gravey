@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    
+<!-- Mirrored from manonamora.neocities.org/pages/interactivefiction/games/dolos by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Jun 2025 10:32:59 GMT -->
+<head>
+        <title>DOL-OS - manonamora's computer</title>
+
+        <meta charset="UFT-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <meta name="description" content="My personal website, filled with stuff I've made and enjoy">
+        <meta name='url' content='../../../index.html'>
+        <meta name='keywords' content='gamedev, interactive fiction, fiction interactive, IF, community, indie dev, twine'>
+        <meta name='language' content='EN'>
+
+        <meta property="og:title" content="manonamora.neocities.org">
+        <meta property="og:description" content="My personal website, filled with stuff I've made and enjoy">
+        <meta property="og:image" content="assets/titlecard.html">
+        <meta name='og:url' content='../../../home/index.html'>
+
+        <meta name='pagename' content="manonamora's computer">
+
+        <link rel="alternate" href="../../../feed.xml" type="application/rss+xml" title="manonamora's computer update log">
+        <link rel="alternate" href="../../../feed.xml" type="application/atom+xml" title="manonamora's computer update log">
+
+        <link rel="icon" type="image/x-icon" href="assets/icons/mtp-logo.html">
+    </head>
+    <style>
+        * {
+            box-sizing: border-box;
+            scrollbar-width: thin;
+            scrollbar-color: #00ff005c transparent;
+        }
+        *:hover {
+            scrollbar-color: #00ff0085 transparent;
+        }
+        html {
+            font: 16px monospace;
+            background: #111;
+        }
+        body {
+            color: #c1ffc1;
+            background: #020900;
+            height: 100vh;
+            position: relative;
+            margin: 0;
+        }
+        #dolos-container {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top:0;
+            bottom:0;
+            left: 0;
+            right:0;
+            margin:auto;
+            padding: 1em;
+            width: 800px;
+            height: 600px;
+            outline: 5px #00580A double;
+            background: repeating-linear-gradient( to bottom, #111 0px, #111 5px, #012F0685 5px, #004A0885 10px);
+            border-radius: 10px;
+            box-shadow: inset 0 0 20px #ffffff36, 0 0 30px #ffffff35;
+        }
+        #dolos-menu {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: fit-content;
+            padding: 7px 5px 10px 5px;
+            border-top: 1px solid lime;
+            box-shadow: 0px -10px 14px rgb(0, 22, 13), inset 0 3px 2px #ffffff1a;
+            background: #000b009c;
+            border-radius: 0 0 10px 10px;
+        }
+        #dolos-screen {
+            width: 100%;
+            height: 96%;
+            background: #00000035;
+            box-shadow: 0 0 40px #00000079;
+        }
+        #dolos-title {
+            height: 57px;
+            width: 381px;
+            position: relative;
+            overflow: clip;
+            margin: auto;
+        }
+        #dolos-title img {
+            width: 100%;
+            top: -127px;
+            position: absolute;
+        }
+        #dolos-subtitle {
+            text-align: center;
+            color: lime;
+            margin: 5px;
+        }
+        #dolos-sub-container {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            overflow:auto;
+            height: 82%;
+        }
+        #dolos-left, #dolos-right {
+            width: 49%;
+        }
+        article {
+            margin: 1% auto 0;
+            border-radius: 5px;
+            outline: 1px solid #00ff009c;
+            margin: 1% 1px 10px;
+        }
+        h2 {
+            margin: 0;
+            text-align: center;
+            text-shadow: 0 0 10px lime;
+        }
+        hr {
+            border-color: lime;
+            margin: 1px 0;
+        }
+        section p {
+            margin: 0;
+            padding: 0.5em;
+        }
+        ul {
+            margin:0;
+        }
+        strong {
+            color:#58f958;
+        }
+        #reviews p {
+            padding-bottom: 0;
+        }
+        #reviews p.io {
+            text-align: right;
+            padding: 0 0.5em 0.5em;
+        }
+        #dolos-socials img {
+            height: 18px;
+        }
+        #dolos-menu a {
+            filter: invert(76%) sepia(45%) saturate(6904%) hue-rotate(79deg) brightness(114%) contrast(128%);
+            margin: 0 5px;
+        }
+        footer {
+            bottom: 3px;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            opacity: 50%;
+        }
+    </style>
+    <body>
+        <main id="dolos-container">
+            <div id="dolos-screen">
+                <h1 id="dolos-title"><img src="../../../assets/cards/dolos.png" alt="DOL-OS logo"></h1>
+                <p id="dolos-subtitle">Will you find the truth inside this old computer?</p>
+                <div id="dolos-sub-container">
+                    <section id="dolos-left">
+                        <article id="synopsis">
+                            <h2>Synopsis</h2>
+                            <hr>
+                            <p style="padding:0.5em 1.5em;text-indent: 1.5em;"><em>Year 3XXX. In some ruins, you’ve found an old computer, one of those antique pieces you’d see in museums. Strangely, the device still powers up when you press its buttons. Wonder what you could find within its files?</em></p>
+                            <p>Explore the delicate framework of the machine, go through its last working files, solve some puzzles and games to unlock its secrets, and maybe...<br><em>find the truth?</em></p>
+                        </article>
+                        <article id="awards">
+                            <h2>Awards</h2>
+                            <hr>
+                            <p><u>Concours de Fiction Interactive Francophone</u> - 2023 Edition</p>
+                            <ul>
+                                <li><strong>Best Game</strong>: Winner</li>
+                                <li><strong>Best Use of Theme</strong>: 2nd place</li>
+                                <li><strong>Technical Excellence</strong>: 2nd place</li>
+                                <li><strong>Best Narrative Design</strong>: 3rd place</li>
+                            </ul>
+                            <p><u>IFDB Awards</u> - 2023</p>
+                            <ul style="padding-bottom: 10px;">
+                                <li><strong>Outstanding French Game</strong>: Winner</li>
+                                <li><strong>Game of the Year</strong>: Nominated</li>
+                                <li><strong>Use of Interactivity</strong>: Nominated</li>
+                                <li><strong>Science Fiction Game</strong>: Nominated</li>
+                                <li><strong>Twine Game</strong>: Nominated</li>
+                                <li><strong>Trailblazer Award</strong>: Nominated</li>
+                            </ul>
+                        </article>
+                        <article id="warnings">
+                            <h2>Warnings</h2>
+                            <hr>
+                            <p>Ambient sound, animated elements, puzzles, and popups. <br>
+                            <em>Mentions of:</em> violence, murder, execution, treason, cheating, abuse, alcoholism, injustice, artificial intelligence (concept), war.</p>
+                        </article>
+                        <p></p>
+                    </section>
+                    <section id="dolos-right">
+                        <article id="info">
+                            <h2>About...</h2>
+                            <hr>
+                            <p>DOL-OS is a sci-fi interactive game created for the 2023 edition of the Concours de Fiction Interactive Francophone. It explore the concepts of Artificial Intelligence and its potential uses, organisational politics, and what is left behind.</p>
+
+                            <p>Completed in the span of a month, this French game received praises for its unique visual design, its developed story, and interactivity.</p>
+
+                            <p>A remastered version has been made available in September 2023, which included additional content, a redesigned UI, and an English translation.</p>
+                        </article>
+                        <article id="reviews">
+                            <h2>Reviews</h2>
+                            <hr>
+                            <p><em>Engaging, thought-provoking, tense,… A very strong piece of IF.</em></p><p class="io">- Rovarsson</p>
+                            <p><em>A complex office/historical/sci-fi twine game with colorful UI.</em></p><p class="io">- Brian Rushton</p>
+                            <p><em>Faire une narration morcelée qui se base sur l'investissement de la personne qui joue est toujours un pari et ici il est gagné !</em></p><p class="io">- Gavroche Games</p>
+                            <p><em>Le déroulement est logique, mais suffisamment "compliqué" pour qu'on ne s'ennuie pas et qu'on soit satisfait de ses découvertes.</em></p><p class="io">- Filiaa</p>
+                            </div>
+                        </article>
+                        <p></p>
+                    </section>
+                </div>
+            </div>
+            <nav id="dolos-menu">
+                <div id="dolos-info">2023 - Twine/SugarCube - Sci-fi - Puzzle - FR/EN - ~2h</div>
+                <a id="dolos-home" href="../../../index.html" title="Homepage"><img src="../../../assets/icons/house-user.svg" alt="Home" style="height: 18px;"></a>
+                <div id="dolos-socials">
+                    <a href="https://manonamora-if.tumblr.com/post/708009888810434560/" title="See Introduction Post"><img src="../../../assets/icons/tumblr.svg" alt="tumblr"></a>
+                    <a href="https://manonamora.itch.io/dolos" title="Play the Game"><img src="../../../assets/icons/itch-io.svg" alt="itch.io"></a>
+                    <a href="https://github.com/manonamora/Twine-Games-Source-Code/tree/main/DOL-OS" title="Source Code"><img src="../../../assets/icons/github.svg" alt="github"></a>
+                    <a href="https://ifdb.org/viewgame?id=vw0p2h2c6myqwsxh" title="Read Reviews"><img src="../../../assets/icons/ifdb.png" alt="IFDB"></a>
+                    <a href="https://manonamora-if.tumblr.com/post/714044714170679296/" title="Read Interview"><img src="../../../assets/icons/comment-dots.svg" alt="Interview"></a>
+                </div>
+            </nav>
+        </main>
+        <footer>© manonamora ~ 2022-2025</footer>
+    </body>
+
+<!-- Mirrored from manonamora.neocities.org/pages/interactivefiction/games/dolos by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Jun 2025 10:33:01 GMT -->
+</html>

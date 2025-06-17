@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    
+<!-- Mirrored from manonamora.neocities.org/pages/interactivefiction/games/roads-not-taken by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Jun 2025 10:33:07 GMT -->
+<head>
+        <title>The Roads not Taken - manonamora's computer</title>
+
+        <meta charset="UFT-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <meta name="description" content="My personal website, filled with stuff I've made and enjoy">
+        <meta name='url' content='../../../index.html'>
+        <meta name='keywords' content='gamedev, interactive fiction, fiction interactive, IF, community, indie dev, twine'>
+        <meta name='language' content='EN'>
+
+        <meta property="og:title" content="manonamora.neocities.org">
+        <meta property="og:description" content="My personal website, filled with stuff I've made and enjoy">
+        <meta property="og:image" content="assets/titlecard.html">
+        <meta name='og:url' content='../../../home/index.html'>
+
+        <meta name='pagename' content="manonamora's computer">
+
+        <link rel="alternate" href="../../../feed.xml" type="application/rss+xml" title="manonamora's computer update log">
+        <link rel="alternate" href="../../../feed.xml" type="application/atom+xml" title="manonamora's computer update log">
+
+        <link rel="icon" type="image/x-icon" href="assets/icons/mtp-logo.html">
+    </head>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #FFDBAF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ffc4c0'/%3E%3Cstop offset='1' stop-color='%23ffc4c0' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23beffb1'/%3E%3Cstop offset='1' stop-color='%23beffb1' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23d6c2ff'/%3E%3Cstop offset='1' stop-color='%23d6c2ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FFDBAF'/%3E%3Cstop offset='1' stop-color='%23FFDBAF' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FFD1E5'/%3E%3Cstop offset='1' stop-color='%23FFD1E5' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23B3F7FF'/%3E%3Cstop offset='1' stop-color='%23B3F7FF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin: 10px auto 25px;
+}
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 10px #4f4f06, 0 0 20px white;
+}
+header p {
+    font-style: italic;
+}
+
+main {
+    display: flex;
+}
+h2 {
+  color: #020273;
+}
+#side {
+    border: 1px solid #2386f0;
+    padding: 5px;
+    background: #a9c2ff;
+    border-radius: 10px;
+    height: 300px;
+    width: 160px;
+    box-shadow: 0 0 10px, inset 0 0 10px white;
+    display: block;
+}
+nav div {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 11px;
+}
+nav a {
+  background: #e69d92;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  display: flex;
+  background: radial-gradient(circle at 10px 10px, #e69d92, #4f2207);
+  box-sizing: unset;
+  box-shadow: 0 0 10px #4d4dff;
+}
+a img {
+            height: 20px;
+            margin: auto;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(112deg) brightness(104%) contrast(103%);
+        }
+section {
+    flex-grow: 1;
+    margin-left: 2em;
+    border: 1px solid #2386f0;
+    padding: 15px;
+    background: #a9c2ff;
+    border-radius: 10px;
+    height: calc(100vh - 120px);
+    overflow: auto;
+    box-shadow: 0 0 10px, inset 0 0 10px white;
+}
+
+        hr {
+            border-style: dashed;
+            border-color: #c8fdf3;
+            margin: 2px 10% 4px;
+        }
+        blockquote {
+            margin: 1em;
+            font-style: italic;
+            text-indent: 1.5em;
+        }
+        section p {
+            margin: 0;
+            padding: 0.5em;
+            text-indent: 1em;
+
+        }
+        #reviews p {
+            padding-bottom: 0;
+        }
+        #reviews p.io {
+            text-align: right;
+            padding: 0 0.5em 0.5em;
+        }
+        footer {
+  text-align: center;
+  margin-top: 5px;
+}
+    </style>
+    <body>
+        <div id="container">
+            <header>
+                <h1>The Roads Not Taken</h1>
+                <p>The Ritual awaits...</p>
+            </header>
+            <main>
+                <aside> <div id="side">
+                        <h2>Game Info</h2>
+                        <hr>
+                        <p>2023<br>Twine/SugarCube<br>Sci-fi<br>Parser<br>EN<br>~30min</p>
+                        <hr>
+                        <nav>
+                            <h2>Links</h2>
+                            <div>
+                                <a href="https://manonamora.itch.io/the-roads-not-taken" target="_blank" title="Play the Game on Itch.io"><img src="../../../assets/icons/itch-io.svg" alt="Itch.io"></a>
+                                <a href="https://ifdb.org/viewgame?id=nn0usa5jtsknl5ww" target="_blank" title="Read some reviews"><img src="../../../assets/icons/ifdb.png" alt="IFDB"></a>
+                                <a href="https://manonamora-if.tumblr.com/post/713765385097412608" target="_blank"><img src="../../../assets/icons/tumblr.svg" alt=""></a>
+                                <li><a href="https://manonamora-if.tumblr.com/post/717506476719144960/">PM</a></li>
+                            </div>
+                        </nav>                    
+                </div></aside>
+                <section>
+                    <article id="synopsis">
+                        <h2>Synopsis</h2>
+                        <hr>
+                        <blockquote>Are you ready to make your choice? The one that will shape the rest of your life? Or will regret the roads not taken?</blockquote>
+                        
+                    </article>
+                    <article id="about">
+                        <h2>About...</h2>
+                        <hr>
+                        <p><em>The Roads Not Taken</em> is a sci-fi parser created for the <em>SpringThing</em>, forcing you to go through a coming-of-age ritual, with a choice that will shape the rest of your life. The main particularity of this game is that it was built in Twine, a non-parser engine (with little custom code).</p>
+
+                        <p>The mechanic of the game was inspired by one-turn parser games, like <em>Aisle</em> and <em>Pick-Up the Phone Booth and Die</em> (the final choice), while the premise nodded at the ceremony described by <em>The Giver</em> (Lois Lowry, 1993), and more recent YA dystopian stories with compartmentalised societies.</p>
+
+                        <p>More than anything, this project was, in retrospect, about my own hubris. When I started with it, <em>on a whim, might I add</em>, I knew parsers with custom engines were <a href="https://ifdb.org/search?searchfor=system%3Acustom+tag%3Aparser&amp;searchgo=Search+Games">few and far-between</a>, and I'd never heard of one made in Twine (turns out, <a href="https://ifdb.org/viewgame?id=28ne9zjmndfngiv">they</a> <a href="https://jessicapadkin.itch.io/i-told-you-this-was-a-bad-idea">actually</a> <a href="https://n2n.itch.io/metacomp">exist</a>). I thought I struck gold on novelty and went to work. I tried to keep it as Vanilla as possible, especially with world modelling.</p>
+                        <p>While <em>The Roads Not Taken</em> garnered attention for this Parser-in-Twine experiment, sharp graphic, and its intriguing mysterious setting, the actual gameplay wasn't as smooth as I'd hoped it would be. Turns out, creating a world model from scratch is pretty difficult - and I was still then a novice then in the parser codes and conventions. However, I think I managed to show there's still a lot more experimenting we can do in the medium - and that's pretty exciting.</p>
+                    </article>
+                    <article id="awards">
+                        <h2>Awards</h2>
+                        <hr>
+                        <p>SpringThing</p>
+                        <ul>
+                            <li><em>Biggest Stakes Single Click</em> - Audience Award</li>
+                            <li><em>Loveliest UI</em> - Audience Award</li>
+                            <li><em>Best Use of Medium</em> - Audience Award</li>
+                        </ul>
+                    </article>
+                    <article id="reviews">
+                        <h2>Reviews</h2>
+                        <hr>
+                        <p><em>Making your own parser is a fraught thing, and many people have tried and failed over the years. This one is better than many I've seen. I liked the overall story, and found it fun. I ended with a pretty big surprise in my playthrough, which was good.</em></p><p class="io">- Brian Rushton</p>
+                        <p><em> I do think the trail this game blazes, of adding parser capability to Twine, is a pretty cool one. I could see future efforts leveraging the expanded interface to good effect. It is this game authorship achievement that I find most compelling here.</em></p><p class="io">- JJ McC</p>
+                        <p><em>I admire the author’s bravery for trying to implement a parser in Twine.</em></p><p class="io">- Vivienne Dunstan</p>
+                    </article>
+                </section>
+            </main>
+            <footer>© manonamora ~ 2022-2025</footer>
+        </div>
+    </body>
+
+<!-- Mirrored from manonamora.neocities.org/pages/interactivefiction/games/roads-not-taken by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Jun 2025 10:33:07 GMT -->
+</html>

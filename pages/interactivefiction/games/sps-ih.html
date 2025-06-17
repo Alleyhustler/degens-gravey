@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    
+<!-- Mirrored from manonamora.neocities.org/pages/interactivefiction/games/sps-ih by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Jun 2025 10:33:07 GMT -->
+<head>
+        <title>SPS Iron Hammer - manonamora's computer</title>
+
+        <meta charset="UFT-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <meta name="description" content="My personal website, filled with stuff I've made and enjoy">
+        <meta name='url' content='../../../index.html'>
+        <meta name='keywords' content='gamedev, interactive fiction, fiction interactive, IF, community, indie dev, twine'>
+        <meta name='language' content='EN'>
+
+        <meta property="og:title" content="manonamora.neocities.org">
+        <meta property="og:description" content="My personal website, filled with stuff I've made and enjoy">
+        <meta property="og:image" content="assets/titlecard.html">
+        <meta name='og:url' content='../../../home/index.html'>
+
+        <meta name='pagename' content="manonamora's computer">
+
+        <link rel="alternate" href="../../../feed.xml" type="application/rss+xml" title="manonamora's computer update log">
+        <link rel="alternate" href="../../../feed.xml" type="application/atom+xml" title="manonamora's computer update log">
+
+        <link rel="icon" type="image/x-icon" href="assets/icons/mtp-logo.html">
+    </head>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #FFDBAF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ffc4c0'/%3E%3Cstop offset='1' stop-color='%23ffc4c0' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23beffb1'/%3E%3Cstop offset='1' stop-color='%23beffb1' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23d6c2ff'/%3E%3Cstop offset='1' stop-color='%23d6c2ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FFDBAF'/%3E%3Cstop offset='1' stop-color='%23FFDBAF' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FFD1E5'/%3E%3Cstop offset='1' stop-color='%23FFD1E5' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23B3F7FF'/%3E%3Cstop offset='1' stop-color='%23B3F7FF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin: 10px auto 25px;
+}
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 10px #4f4f06, 0 0 20px white;
+}
+header p {
+    font-style: italic;
+}
+
+main {
+    display: flex;
+}
+h2 {
+  color: #020273;
+}
+#side {
+    border: 1px solid #2386f0;
+    padding: 5px;
+    background: #a9c2ff;
+    border-radius: 10px;
+    height: 300px;
+    width: 160px;
+    box-shadow: 0 0 10px, inset 0 0 10px white;
+    display: block;
+}
+nav div {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 11px;
+}
+nav a {
+  background: #e69d92;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  display: flex;
+  background: radial-gradient(circle at 10px 10px, #e69d92, #4f2207);
+  box-sizing: unset;
+  box-shadow: 0 0 10px #4d4dff;
+}
+a img {
+            height: 20px;
+            margin: auto;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(112deg) brightness(104%) contrast(103%);
+        }
+section {
+    flex-grow: 1;
+    margin-left: 2em;
+    border: 1px solid #2386f0;
+    padding: 15px;
+    background: #a9c2ff;
+    border-radius: 10px;
+    height: calc(100vh - 120px);
+    overflow: auto;
+    box-shadow: 0 0 10px, inset 0 0 10px white;
+}
+
+        hr {
+            border-style: dashed;
+            border-color: #c8fdf3;
+            margin: 2px 10% 4px;
+        }
+        blockquote {
+            margin: 1em;
+            font-style: italic;
+            text-indent: 1.5em;
+        }
+        section p {
+            margin: 0;
+            padding: 0.5em;
+            text-indent: 1em;
+
+        }
+        #reviews p {
+            padding-bottom: 0;
+        }
+        #reviews p.io {
+            text-align: right;
+            padding: 0 0.5em 0.5em;
+        }
+        footer {
+  text-align: center;
+  margin-top: 5px;
+}
+    </style>
+    <body>
+        <div id="container">
+            <header>
+                <h1>SPS Iron Hammer</h1>
+                <p>Welcome on board!</p>
+            </header>
+            <main>
+                <aside> <div id="side">
+                        <h2>Game Info</h2>
+                        <hr>
+                        <p>2022<br>Twine/SugarCube<br>Sci-fi, Mystery<br>Choice-Based<br>EN<br>~30min</p>
+                        <hr>
+                        <nav>
+                            <h2>Links</h2>
+                            <div>
+                                <a href="https://manonamora.itch.io/sps-iron-hammer" target="_blank" title="Play the Game on Itch.io"><img src="../../../assets/icons/itch-io.svg" alt="Itch.io"></a>
+                                <a href="https://ifdb.org/viewgame?id=48hl0mg3dnlgd65d" target="_blank" title="Read some reviews"><img src="../../../assets/icons/ifdb.png" alt="IFDB"></a>
+                                <a href="https://manonamora-if.tumblr.com/post/674899451872215040" target="_blank"><img src="../../../assets/icons/tumblr.svg" alt=""></a>
+                            </div>
+                        </nav>                    
+                </div></aside>
+                <section>
+                    <article id="synopsis">
+                        <h2>Synopsis</h2>
+                        <hr>
+                        <blockquote>Your content life aboard the <em>SPS Iron Hammer</em> is disrupted with the awakening of a new crew member, and his erratic behaviour. A worrisome truth plagues you: the young man is the only person remembering his life prior to his arrival.</blockquote>
+
+                    </article>
+                    <article id="about">
+                        <h2>About...</h2>
+                        <hr>
+                        <p><em>SPS Iron Hammer</em> is a relatively short sci-fi mystery interactive story, set aboard the titular spaceship. It was originally created for the <em>Interact-IF Game Jam</em>, under the ranked theme of 'cliffhanger'.</p>
+                        <p>While I do believe in the story behind it, and have a plan on how it could be expanded to satisfy the mystery, I don't think the actual entry didn't manage to meet the theme truly. In my excitement about the premise, I missed the timing to make a great cliffhanger (made it one scene longer than it should have been), which cheapened somewhat the reveal. Yet, I am fond of this game, thanks to the valuable lessons it taught me.</p>
+                        <p>After collecting the feedback from the jam, I doodled some potential paths to complete the story, past the cliffhanger, provide a proper conclusion to the story, and include investigative mechanics. Unfortunately, I haven't been able to get back to this project yet.</p>
+                    </article>
+                    <article id="awards">
+                        <h2>Awards</h2>
+                        <hr>
+                        <p>Interact-IF Game Jam</p>
+                        <ul>
+                            <li><em>Visual Design</em>: 3<sup>rd</sup> place</li>
+                            <li><em>Gameplay</em>: 4<sup>th</sup> place</li>
+                            <li><em>Overall</em>: 6<sup>th</sup> place</li>
+                        </ul>
+                        <p>IFDB Awards</p>
+                        <ul>
+                            <li><em>Outstanding Sci-fi Game</em>: Nominated</li>
+                        </ul>
+                    </article>
+                    <article id="reviews">
+                        <h2>Reviews</h2>
+                        <hr>
+                        <p><em>This was one of my favorites so far. I thought the UI was killer. This had such a solid feel to it, and you should be proud of how you made it look. The story was good, and the world-building worked really well for me.</em></p><p class="io">- groggydog</p>
+                        <p><em>Very interesting premise! I love sci-fi, especially with settings that first appear mysterious and involve A.I.s that potentially operate under dubious morality. My favorite part of this story was actually the start, before we meet Jake. I found those sections were the most interesting and provided a good view into life on the ship.</em></p><p class="io">- FracturedFlight</p>
+                    </article>
+                </section>
+            </main>
+            <footer>© manonamora ~ 2022-2025</footer>
+        </div>
+    </body>
+
+<!-- Mirrored from manonamora.neocities.org/pages/interactivefiction/games/sps-ih by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Jun 2025 10:33:07 GMT -->
+</html>

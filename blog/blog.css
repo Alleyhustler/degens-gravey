@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+}
+.paper {
+    width: 500px;
+    margin: 10px auto;
+    padding: 9px 5px 4px 0;
+    position: relative;
+
+    font: normal 12px/1.5 "Lucida Grande", arial, sans-serif;
+    color: #444;
+    line-height: 20px;
+    
+    background: #fff;
+    background: linear-gradient(to top, #d9eaf3 0%, #fff 8%) 0 4px;
+    background-size: 100% 20px;
+
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+}
+.paper::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    top: 0;
+    left: 30px;
+    bottom: 0;
+    border: 1px solid;
+    border-color: transparent #efe4e4;
+    z-index: 0;
+}
+
+.paper h1,
+.paper h2 {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0 0 4px;
+}
+.paper h2 {
+    text-align: center;
+}
+.paper h3,
+.paper h4,
+.paper h5 {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0 0 4px;
+}
+.paper h4,
+.paper h5 {
+    font-weight: normal;
+}
+.paper p {
+    margin:0;
+    text-indent: 2em;
+}
+.paper .new-graph {margin-top: 20px;}
+.paper ul {margin: 0 0 20px;}
+.paper li {margin-top: -1px;}
+.paper hr {
+  border: unset;
+  border-bottom: 1px dashed red;
+  margin: 0 151px 18px 0;
+}
+
+.paper > img {
+  width: 500px;
+  padding-left: 3px;
+  height: 300px;
+}
+
+.paper > * {
+  padding-left: 42px;
+  z-index: 1;
+  position: relative;
+}
+
+small, strong {
+    display: inline-block;
+    height: 20px;
+}
+
+.paper footer {
+    text-align: right;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 510px) {
+    .paper {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .paper > img {
+        aspect-ratio: 5 / 3;
+        width: 100%;
+        height: unset;
+    }
+}
+
+
+/* blog.css | http://127.0.0.1:5500/blog/blog.css */
+
+.paper h2 {
+  padding-top: 1px;
+  margin-bottom: 23px;
+}
+
+/* Inline | http://127.0.0.1:5500/blog/monthly-log/2025-06.html */
+
+.paper h3 {
+  padding-top: 1px;
+}
+
+
+aside {
+    width: fit-content;
+    margin: auto;
+}

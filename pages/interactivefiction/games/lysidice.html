@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    
+<!-- Mirrored from manonamora.neocities.org/pages/interactivefiction/games/lysidice by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Jun 2025 10:33:07 GMT -->
+<head>
+        <title>Lysidice and the Minotaur - manonamora's computer</title>
+
+        <meta charset="UFT-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <meta name="description" content="My personal website, filled with stuff I've made and enjoy">
+        <meta name='url' content='../../../index.html'>
+        <meta name='keywords' content='gamedev, interactive fiction, fiction interactive, IF, community, indie dev, twine'>
+        <meta name='language' content='EN'>
+
+        <meta property="og:title" content="manonamora.neocities.org">
+        <meta property="og:description" content="My personal website, filled with stuff I've made and enjoy">
+        <meta property="og:image" content="assets/titlecard.html">
+        <meta name='og:url' content='../../../home/index.html'>
+
+        <meta name='pagename' content="manonamora's computer">
+
+        <link rel="alternate" href="../../../feed.xml" type="application/rss+xml" title="manonamora's computer update log">
+        <link rel="alternate" href="../../../feed.xml" type="application/atom+xml" title="manonamora's computer update log">
+
+        <link rel="icon" type="image/x-icon" href="assets/icons/mtp-logo.html">
+    </head>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #FFDBAF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ffc4c0'/%3E%3Cstop offset='1' stop-color='%23ffc4c0' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23beffb1'/%3E%3Cstop offset='1' stop-color='%23beffb1' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23d6c2ff'/%3E%3Cstop offset='1' stop-color='%23d6c2ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FFDBAF'/%3E%3Cstop offset='1' stop-color='%23FFDBAF' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FFD1E5'/%3E%3Cstop offset='1' stop-color='%23FFD1E5' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23B3F7FF'/%3E%3Cstop offset='1' stop-color='%23B3F7FF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin: 10px auto 25px;
+}
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 10px #4f4f06, 0 0 20px white;
+}
+header p {
+    font-style: italic;
+}
+
+main {
+    display: flex;
+}
+h2 {
+  color: #020273;
+}
+#side {
+    border: 1px solid #2386f0;
+    padding: 5px;
+    background: #a9c2ff;
+    border-radius: 10px;
+    height: 300px;
+    width: 160px;
+    box-shadow: 0 0 10px, inset 0 0 10px white;
+    display: block;
+}
+nav div {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 11px;
+}
+nav a {
+  background: #e69d92;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  display: flex;
+  background: radial-gradient(circle at 10px 10px, #e69d92, #4f2207);
+  box-sizing: unset;
+  box-shadow: 0 0 10px #4d4dff;
+}
+a img {
+            height: 20px;
+            margin: auto;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(112deg) brightness(104%) contrast(103%);
+        }
+section {
+    flex-grow: 1;
+    margin-left: 2em;
+    border: 1px solid #2386f0;
+    padding: 15px;
+    background: #a9c2ff;
+    border-radius: 10px;
+    height: calc(100vh - 120px);
+    overflow: auto;
+    box-shadow: 0 0 10px, inset 0 0 10px white;
+}
+
+        hr {
+            border-style: dashed;
+            border-color: #c8fdf3;
+            margin: 2px 10% 4px;
+        }
+        blockquote {
+            margin: 1em;
+            font-style: italic;
+            text-indent: 1.5em;
+        }
+        section p {
+            margin: 0;
+            padding: 0.5em;
+            text-indent: 1em;
+
+        }
+        #reviews p {
+            padding-bottom: 0;
+        }
+        #reviews p.io {
+            text-align: right;
+            padding: 0 0.5em 0.5em;
+        }
+        footer {
+  text-align: center;
+  margin-top: 5px;
+}
+    </style>
+    <body>
+        <div id="container">
+            <header>
+                <h1>Lysidice and the Minotaur</h1>
+                <p>Can you escape the labyrinth?</p>
+            </header>
+            <main>
+                <aside> <div id="side">
+                        <h2>Game Info</h2>
+                        <hr>
+                        <p>2024<br>Adventuron<br>Mythology, Puzzles<br>Parser (Merciful)<br>EN<br>~30-60min</p>
+                        <hr>
+                        <nav>
+                            <h2>Links</h2>
+                            <div>
+                                <a href="https://manonamora.itch.io/minotaur" target="_blank" title="Play the Game on Itch.io"><img src="../../../assets/icons/itch-io.svg" alt="Itch.io"></a>
+                                <a href="https://ifdb.org/viewgame?id=d6gtumvufzhuf9v" target="_blank" title="Read some reviews"><img src="../../../assets/icons/ifdb.png" alt="IFDB"></a>
+                                <a href="https://manonamora-if.tumblr.com/post/749593564591357952/" target="_blank"><img src="../../../assets/icons/tumblr.svg" alt=""></a>
+                            </div>
+                        </nav>                    
+                </div></aside>
+                <section>
+                    <article id="synopsis">
+                        <h2>Synopsis</h2>
+                        <hr>
+                        <blockquote>You are Lysidice, a young Athenian maiden prisoner of the Labyrinth. Though you are under the protection of the Minotaur, you know your luck is bound to run out. And when he shows up...</blockquote>
+                        <p>Explore the famous labyrinth, interact with notable figures, solved some puzzles, and do your best to save yourself!</p>
+                    </article>
+                    <article id="synopsis">
+                        <h2>Warnings</h2>
+                        <hr>
+                        <p>This game contains mentions or depictions of: fights (swords), injuries and wounds, bodily fluids (blood), mental illness, harm to animals (minimal).</p>
+                    </article>
+                    <article id="about">
+                        <h2>About...</h2>
+                        <hr>
+                        <p><em>Lysidice and the Minotaur</em> is a classic parser text-adventure created for the <em>Text Adventure Literacy Jam</em>, meant to introduce non-parser players to the medium. The game includes an in-game tutorial, walkthrough and a hint system.</p>
+                        <p>The premise of this game is based on the the <a href="../assets.html">prompt</a> of the same name I submitted to the <em>SeedComp!</em> - an idea I wasn't sure I would be able to work on at the time. Through some things changed since writing the prompt (especially the format), its core is still there: taking a well-known myth, <em>Theseus and the Minotaur</em>, and looking at it from a different perspective. Through this lense, I wanted to subvert the image of the Minotaur, from a hideous and dangerous monster, to a soft and protecting being.</p>
+                    </article>
+                    <article id="awards">
+                        <h2>Awards</h2>
+                        <hr>
+                        <p>Text Adventure Literacy Jam</p>
+                        <ul>
+                            <li>2<sup>nd</sup> place: <em>Puzzles</em>, <em>Documentation</em></li>
+                            <li>3<sup>rd</sup> place: <em>Overall</em>, <em>Story</em></li>
+                            <li>4<sup>th</sup> place: <em>Tutorial</em>, <em>Implementation</em></li>
+                            <li>5<sup>th</sup> place: <em>Writing</em></li>
+                        </ul>
+                        <p>IFDB Awards</p>
+                        <ul>
+                            <li><em>Outstanding Adventuron Game</em>:  Nominated</li>
+                        </ul>
+                    </article>
+                    <article id="reviews">
+                        <h2>Reviews</h2>
+                        <hr>
+                        <p><em>Without a doubt, this is the best parser you have released until now. The take on Lysidice's character on the Minotaur mythology was a unique and enjoyable one. Nice work!</em></p><p class="io">- Hyacinthos.</p>
+                        <p><em>This is my single favorite parser from this author. They started as primarily a Twine author and have rather rapidly expanded into other authoring systems over the last two years. I don't know if it's from trial and error or simply from playing and reviewing so many different types of games, but this game shows an implicit understanding of the typical tropes and design shorthand that has risen up around the hobbyist parser scene over the last three decades.   </em></p><p class="io">- Pinkunz</p>
+                        <p><em>The ambiance, the events, the people you meet, the puzzles, the story, it's all a lot better than what I first expected from a game intended primarily for beginner players.</em></p><p class="io">- Samuel Verschelde</p>
+                        <p><em>I think it was brave to choose a maze, the most universally hated text adventure trope, as the setting for an "introductory" game! And you made it work, though it sometimes felt a bit claustrophobic. </em></p><p class="io">- RustyBones</p>
+                        <p><em>I really felt the kind nature of the Minotaur and his lovely relationship with the player character; this is very nicely done for a mute character. A really lovely and fun game!</em></p><p class="io">- Dee Cooke</p>
+                        <p><em>Lysidice and the Minotaur is a straightforward but effective introduction to traditional parser IF, with an appealing cast and good pacing (different sections of the maze are unlocked successively as you solve puzzles – it’s a good mechanic to keep the possibilities manageable, and ensure exploration is never overwhelming).</em></p><p class="io">- Mike Russo</p>
+                        <p><em>A terrific ambassador for parser games. With its overt old school aesthetic and vibe it conjures a time when IF was shiny-new and filled with promise. LnM’s warm story and welcoming play expands on that to open the hobby to those that might otherwise fear its legendary opacity and cruelty. By extension, LnM makes all of US look less inbred and niche. Thanks LnM! </em></p><p class="io">- JJ McC</p>
+                        <p><em> I love it. I love that it makes the monstrous minotaur into a loving friend to Lysidice, and I love that her motivation throughout the game is her love for him; she wants to escape the maze with him so that he’ll stop getting hurt protecting her. It was very sweet, and a nice subversion of the myth.</em></p></p><p class="io">- Tabitha</p>
+                    </article>
+                </section>
+            </main>
+            <footer>© manonamora ~ 2022-2025</footer>
+        </div>
+    </body>
+
+<!-- Mirrored from manonamora.neocities.org/pages/interactivefiction/games/lysidice by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Jun 2025 10:33:07 GMT -->
+</html>

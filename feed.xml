@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+    <title>manonamora's computer update log</title>
+    <description>Beep, boop. Games and stuff.</description>
+    <link>https://manonamora.neocities.org/</link>
+    <lastBuildDate>Tue, 3 June 2025 05:51:32 +0000</lastBuildDate>
+
+    <!-- Copy/Paste + fill
+    <item>
+        <title></title>
+        <link></link>
+        <pubDate></pubDate>
+        <description></description>
+    </item>
+    -->
+    <item>
+        <title>New Clique Page</title>
+        <link>https://manonamora.neocities.org/pages/sidepages/cliques.html</link>
+        <pubDate>Mon, 9 Jun 2025</pubDate>
+        <description>I've added a Clique page to the website, for pixel art groups I've been contributing. Also some extra changes on the website (see Updates page).</description>
+    </item>
+    <item>
+        <title>New Feeds</title>
+        <link>https://manonamora.neocities.org/</link>
+        <pubDate>Sun, 8 Jun 2025</pubDate>
+        <description>Game Releases and New Blogs now have their separate feeds!</description>
+    </item>
+    <item>
+        <title>Opening the Neighbourhood</title>
+        <link>https://manonamora.neocities.org/pages/sidepages/neighbourhood.html</link>
+        <pubDate>Tue, 3 June 2025</pubDate>
+        <description>Some cool people, some friends, awesome sauce websites. Available Spots. Apply Inside.</description>
+    </item>
+    <item>
+        <title>Now with a RSS Feed!</title>
+        <link>https://manonamora.neocities.org/home</link>
+        <pubDate>Mon, 2 June 2025</pubDate>
+        <description>This website now has a rough RSS feed. For general updates and releases. Please bear with me.</description>
+    </item>
+    <item>
+        <title>V3 released! Some Notes.</title>
+        <link>https://manonamora.neocities.org/blog/singular/2025-05-20</link>
+        <pubDate>Wed, 27 May 2025</pubDate>
+        <description>Huge update of the website happened. Changes still ongoing (additional content coming soon).</description>
+    </item>
+</channel>
+</rss> 

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    
+<!-- Mirrored from manonamora.neocities.org/pages/interactivefiction/games/petite-mort by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Jun 2025 10:33:07 GMT -->
+<head>
+        <title>La Petite Mort - manonamora's computer</title>
+
+        <meta charset="UFT-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <meta name="description" content="My personal website, filled with stuff I've made and enjoy">
+        <meta name='url' content='../../../index.html'>
+        <meta name='keywords' content='gamedev, interactive fiction, fiction interactive, IF, community, indie dev, twine'>
+        <meta name='language' content='EN'>
+
+        <meta property="og:title" content="manonamora.neocities.org">
+        <meta property="og:description" content="My personal website, filled with stuff I've made and enjoy">
+        <meta property="og:image" content="assets/titlecard.html">
+        <meta name='og:url' content='../../../home/index.html'>
+
+        <meta name='pagename' content="manonamora's computer">
+
+        <link rel="alternate" href="../../../feed.xml" type="application/rss+xml" title="manonamora's computer update log">
+        <link rel="alternate" href="../../../feed.xml" type="application/atom+xml" title="manonamora's computer update log">
+
+        <link rel="icon" type="image/x-icon" href="assets/icons/mtp-logo.html">
+    </head>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #FFDBAF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ffc4c0'/%3E%3Cstop offset='1' stop-color='%23ffc4c0' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23beffb1'/%3E%3Cstop offset='1' stop-color='%23beffb1' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23d6c2ff'/%3E%3Cstop offset='1' stop-color='%23d6c2ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FFDBAF'/%3E%3Cstop offset='1' stop-color='%23FFDBAF' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FFD1E5'/%3E%3Cstop offset='1' stop-color='%23FFD1E5' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23B3F7FF'/%3E%3Cstop offset='1' stop-color='%23B3F7FF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin: 10px auto 25px;
+}
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 10px #4f4f06, 0 0 20px white;
+}
+header p {
+    font-style: italic;
+}
+
+main {
+    display: flex;
+}
+h2 {
+  color: #020273;
+}
+#side {
+    border: 1px solid #2386f0;
+    padding: 5px;
+    background: #a9c2ff;
+    border-radius: 10px;
+    height: 300px;
+    width: 160px;
+    box-shadow: 0 0 10px, inset 0 0 10px white;
+    display: block;
+}
+nav div {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 11px;
+}
+nav a {
+  background: #e69d92;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  display: flex;
+  background: radial-gradient(circle at 10px 10px, #e69d92, #4f2207);
+  box-sizing: unset;
+  box-shadow: 0 0 10px #4d4dff;
+}
+a img {
+            height: 20px;
+            margin: auto;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(112deg) brightness(104%) contrast(103%);
+        }
+section {
+    flex-grow: 1;
+    margin-left: 2em;
+    border: 1px solid #2386f0;
+    padding: 15px;
+    background: #a9c2ff;
+    border-radius: 10px;
+    height: calc(100vh - 120px);
+    overflow: auto;
+    box-shadow: 0 0 10px, inset 0 0 10px white;
+}
+
+        hr {
+            border-style: dashed;
+            border-color: #c8fdf3;
+            margin: 2px 10% 4px;
+        }
+        blockquote {
+            margin: 1em;
+            font-style: italic;
+            text-indent: 1.5em;
+        }
+        section p {
+            margin: 0;
+            padding: 0.5em;
+            text-indent: 1em;
+
+        }
+        #reviews p {
+            padding-bottom: 0;
+        }
+        #reviews p.io {
+            text-align: right;
+            padding: 0 0.5em 0.5em;
+        }
+        footer {
+  text-align: center;
+  margin-top: 5px;
+}
+    </style>
+    <body>
+        <div id="container">
+            <header>
+                <h1>La Petite Mort</h1>
+                <p>"Granny's just a little different!"</p>
+            </header>
+            <main>
+                <aside> <div id="side">
+                        <h2>Game Info</h2>
+                        <hr>
+                        <p>2022-3<br>Twine/SugarCube<br>Slice-of-Life<br>Puzzle<br>EN/FR<br>~30min</p>
+                        <hr>
+                        <nav>
+                            <h2>Links</h2>
+                            <div>
+                                <a href="https://manonamora.itch.io/la-petite-mort" target="_blank" title="Play the Game on Itch.io"><img src="../../../assets/icons/itch-io.svg" alt="Itch.io"></a>
+                                <a href="https://ifdb.org/viewgame?id=xd927b8g22g17p" target="_blank" title="Read some reviews"><img src="../../../assets/icons/ifdb.png" alt="IFDB"></a>
+                                <a href="https://manonamora-if.tumblr.com/post/743045392659333120" target="_blank"><img src="../../../assets/icons/tumblr.svg" alt=""></a>
+                            </div>
+                        </nav>                    
+                </div></aside>
+                <section>
+                    <article id="synopsis">
+                        <h2>Synopsis</h2>
+                        <hr>
+                        <blockquote>Explore the house and uncover your grandmother's secrets.</blockquote>
+                        <p>Help Suzette, an eight year old, getting ready to meet her peculiar grandmother for an outing that afternoon at her as-peculiar job.</p>
+                    </article>
+                    <article id="about">
+                        <h2>About...</h2>
+                        <hr>
+                        <p><em>La Petite Mort</em> is a short slice-of-life interactive puzzle game originally created for the 2022 French edition of the <em>EctoComp</em>, submitted in the titular category, since its development time was under 4h. You play as little Suzette, on a holiday at her peculiar grandmother, tasked to get herself ready.</p>
+                        <p>The game follows codes of text-adventures, as its mechanical core revolves around solving puzzles, managing inventory, and interacting with the "world". It also includes multiple endings.</p>
+                        <p>When working on this game in 2022, I was pretty worried about the time limit - 4h is <em>very short</em>, and I'd never created anything that didn't require at least a week of development time. Even with extensive planning and timing myself to the second, I was still pretty surprised with what I managed to submit (even with the bugs, <em>oh well</em>). And I wasn't the only one, as the game was praised for the amount of content available.</p> 
+                        <p>In 2023, <em>La Petite Mort</em> was remastered, fixing a couple of issues and expanding the explorable "world", to include elements I originally planned but did not have time to include. It was also translated into English and submitted to that year's EctoComp edition.</p>
+                    </article>
+                    <article id="awards">
+                        <h2>Awards</h2>
+                        <hr>
+                        <p>EctoComp</p>
+                        <ul>
+                            <li><em>La Petite Mort</em> (French): 1<sup>st</sup> place</li>
+                            <li><em>Le Grand Guignol</em> (English): 5<sup>th</sup> place</li>
+                        </ul>
+                        <p>IFDB Awards</p>
+                        <ul>
+                            <li><em>Outstanding French Game</em>: Nominated</li>
+                        </ul>
+                    </article>
+                    <article id="reviews">
+                        <h2>Reviews</h2>
+                        <hr>
+                        <p><em>Overall, I thought it was well-written and looked nice. The grandma is a neat character, very intriguing. And the UI is beautiful.</em></p><p class="io">- Brian Rushton</p>
+                        <p><em>C'était vraiment très mignon ! La quantité de texte et l'interface soignée sont impressionnants pour 4h. </em></p><p class="io">- Filiaa</p>
+                        <p><em>Très sympa, progression logique et fluide, on se prend au jeu de remplir toutes les missions données par Mamie.</em></p><p class="io">- Atozi</p>
+                        <p><em>Ah, the amusing lightbulb moment when you realize the reason for the title. Very cute. I liked Suzette, and just going through the simple tasks and petting animals while gradually learning more about the grandmother.</em></p><p class="io">- officecyborg</p>
+                    </article>
+                </section>
+            </main>
+            <footer>© manonamora ~ 2022-2025</footer>
+        </div>
+    </body>
+
+<!-- Mirrored from manonamora.neocities.org/pages/interactivefiction/games/petite-mort by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Jun 2025 10:33:07 GMT -->
+</html>

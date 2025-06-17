@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+    
+<!-- Mirrored from manonamora.neocities.org/home by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Jun 2025 10:31:12 GMT -->
+<head>
+        <title>Desktop - manonamora's computer</title>
+
+        <meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <meta name="description" content="My personal website, filled with stuff I've made and enjoy">
+        <meta name='url' content='index.html'>
+        <meta name='keywords' content='gamedev, interactive fiction, fiction interactive, IF, community, indie dev, twine'>
+        <meta name='language' content='EN'>
+
+        <meta property="og:title" content="manonamora.neocities.org">
+        <meta property="og:description" content="My personal website, filled with stuff I've made and enjoy">
+        <meta property="og:image" content="assets/titlecard.png">
+        <meta name='og:url' content='home/index.html'>
+
+        <meta name='pagename' content="Desktop - manonamora's computer">
+
+        <link rel="alternate" href="feed.xml" type="application/rss+xml" title="manonamora's computer update log">
+        <link rel="alternate" href="feed.xml" type="application/atom+xml" title="manonamora's computer update log">
+
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="main.css"/>
+        <link rel="icon" type="image/x-icon" href="assets/icons/mtp-logo.png">
+    </head>
+    <body onload="loadingScripts()">
+        <div id="background"></div>
+        <main>
+            <aside id="navigation">
+                <nav>
+                    <button id="home-button" onclick="openWindow('welcome-window')">
+                        <img src="assets/icons/home.ico" alt="">
+                        <p>Home</p>
+                    </button>
+                    <button id="update-button" onclick="openWindow('update-window')">
+                        <img src="assets/icons/update.ico" alt="">
+                        <p>Update</p>
+                    </button>
+                    <button id="images-button" onclick="openWindow('error-window')">
+                        <img src="assets/icons/pictures.ico" alt="">
+                        <p>Pictures</p>
+                    </button>
+                    <button id="if-project-button" onclick="openWindow('if-project-window')">
+                        <img src="assets/icons/projects.ico" alt="">
+                        <p>Interactive Fiction</p>
+                    </button>
+                    <button id="neighbours-button" onclick="openWindow('neighbours-window')">
+                        <img src="assets/icons/world_star.ico" alt="">
+                        <p>Neighbours</p>
+                    </button>
+
+                    <button id="now-button" onclick="openWindow('now-window')">
+                        <img src="assets/icons/now.ico" alt="">
+                        <p>Currently...</p>
+                    </button>
+                    <button id="about-button" onclick="openWindow('about-window')">
+                        <img src="assets/icons/mtp-logo.png" alt="">
+                        <p>About</p>
+                    </button>
+                    <button id="roadmap-button" onclick="openWindow('roadmap-window')">
+                        <img src="assets/icons/roadmap.png" alt="">
+                        <p>On the Worktable</p>
+                    </button>
+                    <button id="library-button" onclick="openWindow('error-window')">
+                        <img src="assets/icons/library.ico" alt="">
+                        <p>Library</p>
+                    </button>
+                    <button id="community-button" onclick="openWindow('community-window')">
+                        <img src="assets/icons/community.ico" alt="">
+                        <p>Brotherhood of the Chain</p>
+                    </button>
+                    <button id="zine-button" onclick="openWindow('error-window')">
+                        <img src="assets/icons/zine.ico" alt="">
+                        <p>Zines</p>
+                    </button>
+                    <button id="publications-button" onclick="openWindow('error-window')">
+                        <img src="assets/icons/publications.ico" alt="">
+                        <p>Publications</p>
+                    </button>
+                    <button id="five-sense-button" onclick="openWindow('fivesenses-window')">
+                        <img src="assets/icons/chronicles.ico" alt="">
+                        <p>5Senses.exe</p>
+                    </button>
+                    <button id="writing-button" onclick="openWindow('error-window')">
+                        <img src="assets/icons/writing.ico" alt="">
+                        <p>Writing</p>
+                    </button>
+                    <button id="clique-button" onclick="openWindow('clique-window')">
+                        <img src="assets/icons/cliques.ico" alt="">
+                        <p>The Grind Begins</p>
+                    </button>
+                </nav>
+            </aside>
+            <!-- Error popup -->
+            <section id="error-window" class="window" style="display: none;">
+                <div class="window-titlebar">
+                    <img src="assets/icons/error.ico">
+                    <div class="window-title">ERROR!</div>
+                    <button class="close" onclick="closeWindow('error-window')">X</button>
+                </div>
+                <div id="window-toolbar">
+                    Sorry... Window is broken... 
+
+                    <button class="close" onclick="closeWindow('error-window')">ok...</button>
+                </div>
+            </section> 
+            <!-- Welcome -->
+<section id="welcome-window" class="window">
+    <div class="window-titlebar">
+        <div class="window-title"><h1>Degens Graveyard</h1></div>
+        <button class="close" onclick="closeWindow('welcome-window')">X</button>
+    </div>
+    <div class="window-toolbar">
+
+    </div>
+    <article class="window-body">
+        <div class="body-panel">
+            <img src="Untitled Project.jpg" alt="memorial flower">
+            <h1>Degens Graveyard</h1>
+            <hr>
+            <em>A final resting place for the suspended warriors of Solana memecoin trenches.</em>
+            <hr>
+            <p> 2025-06-17<br>
+            <a class="fake-link" onclick="openWindow('update-window')">Ledger Updates</a></p>
+            <p>
+                <a class="fake-link" onclick="openWindow('sitemap-window')">Map of the Fallen</a> (<a href="pages/sidepages/sitemap.html">external</a>)
+            </p>
+            <a class="fake-link" onclick="openWindow('colophon-window')">Credits</a>
+            <!--a class="fake-link" onclick="openWindow('todo-window')">To-Do List</a-->
+            <hr>
+        </div>
+        <div class="body-content">
+            <h2>Welcome, Pilgrim</h2>
+            <hr>
+            <h3>...to the Graveyard V1.0 – a digital shrine for those Degenss lost in the recent Solana purge. Their sacrifices won't be forgotten.</h3>
+            <hr>
+            <p>This website serves as an eternal flame — part archive, part monument — for the legends who grinded day and night in the Solana memecoin wars.</p>
+            <hr>
+<div class="memorial-section">
+    <h2>🕯 Memorial Wall</h2>
+    <hr>
+    <ul style="list-style-type: none; padding-left: 0;">
+        <li><strong>@gmgnai</strong></li>
+        <li><strong>@haze0x</strong> — Founder</li>
+        <li><strong>@arthur_gmgn</strong> — Co-founder</li>
+        <li><strong>@Ga__ke</strong> — Affiliate (?)</li>
+        <li><strong>@brc20niubi</strong> — Affiliate</li>
+        <li><strong>@Wolfy_XBT</strong> — Affiliate</li>
+        <li><strong>@0xcryptowizard</strong> — Affiliate</li>
+        <li><strong>@ivyflame</strong> — Team</li>
+        <li><strong>@gmgnaiJapanese</strong></li>
+    </ul>
+    <p style="font-style: italic; font-size: 0.9em;">Gone, but not forgotten. Their grind echoes in the blockchain.</p>
+</div>
+            <hr>
+            Last Tribute Log: <a href="blog/2025-06-03.html">The Great Suspension</a>
+        </div>
+    </article>
+    <div class="window-footer"></div>
+</section>
+
+            <!-- Sitemap -->
+            <section id="sitemap-window" class="window" style="display: none;">
+                <div class="window-titlebar">
+                    <img src="assets/icons/sitemap.ico">
+                    <div class="window-title">Sitemap</div>
+                    <button class="close" onclick="closeWindow('sitemap-window')">X</button>
+                </div>
+                <article class="window-body">
+                    <div class="body-content">
+                        <iframe src="pages/sidepages/sitemap.html" frameborder="0"></iframe>
+                    </div>
+                </article>
+            </section>
+            <!-- Contact -->
+            <section id="contact-window" class="window" style="display: none;">
+                <div class="window-titlebar">
+                    <img src="assets/icons/contact.ico">
+                    <div class="window-title">Contact</div>
+                    <button class="close" onclick="closeWindow('contact-window')">X</button>
+                </div>
+                <article class="window-body">
+                    <div id="contact-me">
+                        <div id="contact-first-line">
+                            <div id="contact-name" class="fake-input">Manon (she/her)</div>
+                            <div id="contact-username" class="fake-input">manonamora</div>
+                        </div>
+                        <div class="fake-input contact-description">Indie Game Dev</div>
+                        <div class="fake-input contact-description">Open to inquiries or questions!</div>
+                    </div>
+                    <hr>
+                    <div id="contact-direct">
+                        <div class="contact-sections-header">Contact</div>
+                        <div id="contact-email" class="contact-line">
+                            <div class="fake-dropbox">Email<div class="fake-triangle"></div></div>
+                            <div class="contact-text-block"><a href="mailto:manonamora.games@gmail.com">manonamora.games@gmail.com</a></div>
+                        </div>
+                        <div id="contact-tumblr" class="contact-line">
+                            <div class="fake-dropbox">Tumblr<div class="fake-triangle"></div></div>
+                            <div class="contact-text-block"><a href="https://manonamora-if.tumblr.com/ask">manonamora-if/ask</a></div>
+                        </div>
+                        <div id="contact-neo" class="contact-line">
+                            <div class="fake-dropbox">Discord<div class="fake-triangle"></div></div>
+                            <div class="contact-text-block"><a href="https://discord.gg/6arc3tDfen">Personal server</a></div>
+                        </div>
+                        <div id="contact-discord" class="contact-line">
+                            <div class="fake-dropbox">Discord<div class="fake-triangle"></div></div>
+                            <div class="contact-text-block"><a href="https://discord.gg/NP6c6aAKfK">Neo-Interactive server</a></div>
+                        </div>
+                        <!--In the future: an actual contact form-->
+                    </div>
+                    <div id="contact-where-link">
+                        <div class="contact-sections-header">Find Me On...</div>
+                        <div id="contact-itch" class="contact-line">
+                            <div class="fake-dropbox">Itch.io<div class="fake-triangle"></div></div>
+                            <div class="contact-text-block"><a href="https://manonamora.itch.io/">manonamora.itch.io</a></div>
+                        </div>
+                        <div id="contact-github" class="contact-line">
+                            <div class="fake-dropbox">Github<div class="fake-triangle"></div></div>
+                            <div class="contact-text-block"><a href="https://github.com/manonamora">github.com/manonamora</a></div>
+                        </div>
+                        <div id="contact-ifdb" class="contact-line">
+                            <div class="fake-dropbox">IFDB<div class="fake-triangle"></div></div>
+                            <div class="contact-text-block"><a href="https://ifdb.org/showuser?id=r8zj2ybma6r0emy4">ifdb.org/manonamora</a></div>
+                        </div>
+
+                        <div id="contact-tumblr" class="contact-line">
+                            <div class="fake-dropbox">Tumblr<div class="fake-triangle"></div></div>
+                            <div class="contact-text-block"><a href="https://manonamora-if.tumblr.com/">@manonamora-if</a></div>
+                        </div>
+                        <div id="contact-mastodon" class="contact-line">
+                            <div class="fake-dropbox">Mastodon<div class="fake-triangle"></div></div>
+                            <div class="contact-text-block"><a rel="me" href="https://mastodon.gamedev.place/@manonamora">gamedev.place/manonamora</a></div>
+                        </div>
+                        <div id="contact-bluesky" class="contact-line">
+                            <div class="fake-dropbox">BlueSky<div class="fake-triangle"></div></div>
+                            <div class="contact-text-block"><a href="https://bsky.app/profile/manonamora.bsky.social">manonamora.bsky</a></div>
+                        </div>
+
+                        <div id="contact-intfic" class="contact-line">
+                            <div class="fake-dropbox">IF Forum<div class="fake-triangle"></div></div>
+                            <div class="contact-text-block"><a href="https://intfiction.org/u/manonamora/summary">IntFiction.org/manonamora</a></div>
+                        </div>
+                        <div id="contact-fic-int" class="contact-line">
+                            <div class="fake-dropbox">IF Forum<div class="fake-triangle"></div></div>
+                            <div class="contact-text-block"><a href="https://forum.fiction-interactive.fr/u/manonamora/summary">Fiction-Interactive.fr/manonamora</a></div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <!-- Update Site -->
+            <section id="update-window" class="window" style="display: none;">
+                <div class="window-titlebar">
+                    <img src="assets/icons/update.ico">
+                    <div class="window-title">Updates</div>
+                    <button class="close" onclick="closeWindow('update-window')">X</button>
+                </div>
+                <article class="window-body">
+                    <div class="body-content">
+                        <iframe src="pages/sidepages/siteupdates.html" frameborder="0"></iframe>
+                    </div>
+                </article>
+            </section>
+            <!-- Colophon -->
+            <section id="colophon-window" class="window" style="display: none;">
+                <div class="window-titlebar">
+                    <img src="assets/icons/zine.ico">
+                    <div class="window-title">Colophon</div>
+                    <button class="close" onclick="closeWindow('colophon-window')">X</button>
+                </div>
+                <article class="window-body">
+                    <div class="body-content">
+                        <iframe src="pages/sidepages/colophon.html" frameborder="0"></iframe>
+                    </div>
+                </article>
+            </section>
+            <!-- About Me -->
+            <section id="about-window" class="window" style="display: none;">
+                <div class="window-titlebar">
+                    <img src="assets/icons/mtp-logo.png">
+                    <div class="window-title">About Me...</div>
+                    <button class="close" onclick="closeWindow('about-window')">X</button>
+                </div>
+                <article class="window-body">
+                    <div class="body-content">
+                        <iframe src="pages/sidepages/about.html" frameborder="0"></iframe>
+                    </div>
+                </article>
+            </section>
+            <!-- What doing Now -->
+            <section id="now-window" class="window" style="display: none;">
+                <div class="window-titlebar">
+                    <img src="assets/icons/now.ico">
+                    <div class="window-title">Currently...</div>
+                    <button class="close" onclick="closeWindow('now-window')">X</button>
+                </div>
+                <article class="window-body">
+                    <div class="body-content">
+                        <iframe src="pages/sidepages/now.html" frameborder="0"></iframe>
+                    </div>
+                </article>
+            </section>  
+            <!-- Project -->
+            <section id="if-project-window" class="window fullscreen" style="display: none;">
+                <div class="window-titlebar">
+                    <img src="assets/icons/projects.ico">
+                    <div class="window-title">Interactive Fiction</div>
+                    <button class="close" onclick="closeWindow('if-project-window')">X</button>
+                </div>
+                <div class="window-toolbar">
+                    <div class="toolbar-vr"></div>
+                    <div class="toolbar-menu">
+                        <a href="pages/interactivefiction/ifprojects.html" target="if-projects">Interactive Fiction</a>
+                    </div>
+                    <div class="toolbar-break"></div>
+                    <div class="toolbar-menu">
+                        <a href="pages/interactivefiction/games.html" target="if-projects">Games</a>
+                        <a href="pages/interactivefiction/miscellaneous.html" target="if-projects">Miscellaneous</a>
+                        <a href="pages/interactivefiction/guides.html" target="if-projects">Guides & Templates</a>
+                        <a href="pages/interactivefiction/assets.html" target="if-projects">Assets</a>
+                    </div>
+                    <!-- TODO: 
+                     - Need a link back to home (the list of the projects) + links to the different catagories (separate pages)
+                     - Also a fake URL that updates depending on the page displayed (not editable)
+                    -->
+                </div>
+                <article class="window-body">
+                    <div class="body-content">
+                        <iframe name="if-projects" src="pages/interactivefiction/ifprojects.html" frameborder="0"></iframe>
+                    </div>
+                </article>
+            </section>
+            <!-- Roadmap-->
+            <section id="roadmap-window" class="window fullscreen" style="display: none;">
+                <div class="window-titlebar">
+                    <img src="assets/icons/roadmap.png">
+                    <div class="window-title">On the Worktable</div>
+                    <button class="close" onclick="closeWindow('roadmap-window')">X</button>
+                </div>
+                <div class="window-toolbar">
+                    <div class="toolbar-vr"></div>
+                    <div class="toolbar-menu">
+                        <a href="pages/sidepages/roadmap.html" target="_blank" onclick="closeWindow('roadmap-window')">Roadmap ↗</a>
+                    </div>
+                    <div class="toolbar-break"></div>
+                    <div class="toolbar-menu">
+                        <a>TODO 1</a>
+                        <a>TODO 2</a>
+                        <a>TODO 3</a>
+                        <a>TODO 4</a>
+                        <a>I'll add something here...</a>
+                    </div>
+                    <!-- TODO: 
+                     - Also a fake URL that updates depending on the page displayed (not editable)
+                    -->
+                </div>
+                <article class="window-body">
+                    <div class="body-content">
+                        <iframe src="pages/sidepages/roadmap.html" frameborder="0"></iframe>
+                    </div>
+                </article>
+            </section>
+            <!-- Community Stuff -->
+            <section id="community-window" class="window" style="display: none;">
+                <div class="window-titlebar">
+                    <img src="assets/icons/community.ico">
+                    <div class="window-title">Community Work</div>
+                    <button class="close" onclick="closeWindow('community-window')">X</button>
+                </div>
+                <article class="window-body">
+                    <div class="body-content">
+                        <iframe src="pages/community/ifcomm.html" frameborder="0"></iframe>
+                    </div>
+                </article>
+            </section>
+            <!-- 5Senses -->
+            <section id="fivesenses-window" class="window" style="display: none;">
+                <div class="window-titlebar">
+                    <img src="assets/icons/chronicles.ico">
+                    <div class="window-title">5Senses.exe</div>
+                    <button class="close" onclick="closeWindow('fivesenses-window')">X</button>
+                </div>
+                <article class="window-body">
+                    <div class="body-content">
+                        <iframe src="pages/sidepages/5senses.html" frameborder="0"></iframe>
+                    </div>
+                </article>
+            </section>
+            <!-- Neighbourhood -->
+            <section id="neighbours-window" class="window" style="display: none;">
+                <div class="window-titlebar">
+                    <img src="assets/icons/world_star.ico">
+                    <div class="window-title">Neighbourhood</div>
+                    <button class="close" onclick="closeWindow('neighbours-window')">X</button>
+                </div>
+                <article class="window-body">
+                    <div class="body-content">
+                        <iframe src="pages/sidepages/neighbourhood.html" frameborder="0"></iframe>
+                    </div>
+                </article>
+            </section>
+            <!-- Clique -->
+            <section id="clique-window" class="window" style="display: none;">
+                <div class="window-titlebar">
+                    <img src="assets/icons/cliques.ico">
+                    <div class="window-title">🪦 1. The Grind Begins</div>
+                    <button class="close" onclick="closeWindow('clique-window')">X</button>
+                </div>
+                <article class="window-body">
+                    <div class="body-content">
+                        <iframe src="pages/sidepages/cliques.html" frameborder="0"></iframe>
+                    </div>
+                </article>
+            </section>
+            <!-- Button wall -->
+            <section id="buttons-web">
+            <p>
+                <a class="fake-link" onclick="openWindow('https://x.com/home')"> </a> (<a href="https://x.com/home">Twitter</a>)
+            </p>
+            </section>
+            <!-- Project Showcase -->
+            <section id="showcase">
+                <div id="showcase-links">
+                    <a href="#slide-1">1</a>
+                    <a href="#slide-2">2</a>
+                    <a href="#slide-3">3</a>
+                    <a href="#slide-4">4</a>
+                    <a href="#slide-5">5</a>
+                    <a href="#slide-6">6</a>
+                    <a href="#slide-7">7</a>
+                </div>
+                <div id="slides">
+                    <div id="slide-1">
+                        <a href="pages/interactivefiction/games/harcourt.html" title="The Trials and Tribulations of Edward Harcourt" target="_blank"><img src="assets/cards/harcourt.png"></a>
+                    </div>
+                    <div id="slide-2">
+                        <a href="pages/interactivefiction/games/dolos.html" title="DOL-OS" target="_blank"><img src="assets/cards/dolos.png"></a>
+                    </div>
+                    <div id="slide-3">
+                        <a href="pages/interactivefiction/games/jeangille.html" title="Les lettres du Docteur Jeangille" target="_blank"><img src="assets/cards/jeangille.png"></a>
+                    </div>
+                    <div id="slide-4">
+                        <a href="pages/interactivefiction/games/teatime-vamp.html" title="Teatime with a Vampire" target="_blank"><img src="assets/cards/teatime.png"></a>
+                    </div>
+                    <div id="slide-5">
+                        <a href="pages/interactivefiction/games/not-sad-meal.html" title="Not Another Sad Meal" target="_blank"><img src="assets/cards/sadmeal.png"></a>
+                    </div>
+                    <div id="slide-6">
+                        <a href="https://manonamora.itch.io/zine-ctrlshiftzutalors" target="_blank"><img src="assets/cards/cntrzine.png"></a>
+                    </div>
+                    <div id="slide-7">
+                        <a href="pages/interactivefiction/games/prix.html" title="P-Rix - Space Trucker" target="_blank"><img src="assets/cards/prix.png"></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <button>
+                <!-- icon for menu -> my logo I think?-->
+                <strong>Start</strong>
+            </button>
+            <div class="taskbar-divider"></div>
+            <div id="taskbar-main">
+                <img src="assets/other/under-construction.png" alt="" title="Getting there, one pixel at a time.">
+
+            </div>
+            <div class="taskbar-divider"></div>
+            <div id="taskbar-icons">
+                <!--div id="icons">
+                    <a>O</a>
+                    <a>M</a>
+                    <a>B</a>
+                    volume / wifi/ other
+                </div-->
+                <div id="time-date">
+                    <div id="time">NOW</div>
+                    <div id="date">TODAY</div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+<!-- Mirrored from manonamora.neocities.org/home by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Jun 2025 10:31:33 GMT -->
+</html>

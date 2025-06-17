@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+    <title>IF on manonamora's computer</title>
+    <description>Interactive Fiction Games and other.</description>
+    <link>https://manonamora.neocities.org/pages/sidepages/releaseupdate</link>
+    <lastBuildDate>Tue, 8 June 2025 19:51:32 +0000</lastBuildDate>
+
+    <!-- Copy/Paste + fill
+    <item>
+        <title></title>
+        <link></link>
+        <pubDate></pubDate>
+        <description></description>
+    </item>
+    -->
+    
+    <item>
+        <title>Now with a Separate Feed!</title>
+        <link>https://manonamora.neocities.org/pages/sidepages/releaseupdate</link>
+        <pubDate>Sun, 8 June 2025</pubDate>
+        <description>Releases of new or Updates of IF Games now have a separate feed!</description>
+    </item>
+    <item>
+        <title>Multiple Updates!</title>
+        <link>https://manonamora.neocities.org/pages/sidepages/releaseupdate</link>
+        <pubDate>Sun, 8 June 2025</pubDate>
+        <description>The Trials and Tribulations of Edward Harcourt (final content update), Le Jeu de la Dévotion (translation)</description>
+    </item>
+    <item>
+        <title>Game Update!</title>
+        <link>https://manonamora.neocities.org/pages/sidepages/releaseupdate</link>
+        <pubDate>Sun, 1 June 2025</pubDate>
+        <description>Collision (transaltion), kicking off the Summer of Translation project.</description>
+    </item>
+</channel>
+</rss> 

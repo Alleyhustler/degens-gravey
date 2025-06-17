@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    
+<!-- Mirrored from manonamora.neocities.org/pages/interactivefiction/games/dinner by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Jun 2025 10:33:06 GMT -->
+<head>
+        <title>The Dinner - manonamora's computer</title>
+
+        <meta charset="UFT-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <meta name="description" content="My personal website, filled with stuff I've made and enjoy">
+        <meta name='url' content='../../../index.html'>
+        <meta name='keywords' content='gamedev, interactive fiction, fiction interactive, IF, community, indie dev, twine'>
+        <meta name='language' content='EN'>
+
+        <meta property="og:title" content="manonamora.neocities.org">
+        <meta property="og:description" content="My personal website, filled with stuff I've made and enjoy">
+        <meta property="og:image" content="assets/titlecard.html">
+        <meta name='og:url' content='../../../home/index.html'>
+
+        <meta name='pagename' content="manonamora's computer">
+
+        <link rel="alternate" href="../../../feed.xml" type="application/rss+xml" title="manonamora's computer update log">
+        <link rel="alternate" href="../../../feed.xml" type="application/atom+xml" title="manonamora's computer update log">
+
+        <link rel="icon" type="image/x-icon" href="assets/icons/mtp-logo.html">
+    </head>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #FFDBAF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ffc4c0'/%3E%3Cstop offset='1' stop-color='%23ffc4c0' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23beffb1'/%3E%3Cstop offset='1' stop-color='%23beffb1' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23d6c2ff'/%3E%3Cstop offset='1' stop-color='%23d6c2ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FFDBAF'/%3E%3Cstop offset='1' stop-color='%23FFDBAF' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FFD1E5'/%3E%3Cstop offset='1' stop-color='%23FFD1E5' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23B3F7FF'/%3E%3Cstop offset='1' stop-color='%23B3F7FF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin: 10px auto 25px;
+}
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 10px #4f4f06, 0 0 20px white;
+}
+header p {
+    font-style: italic;
+}
+
+main {
+    display: flex;
+}
+h2 {
+  color: #020273;
+}
+#side {
+    border: 1px solid #2386f0;
+    padding: 5px;
+    background: #a9c2ff;
+    border-radius: 10px;
+    height: 300px;
+    width: 160px;
+    box-shadow: 0 0 10px, inset 0 0 10px white;
+    display: block;
+}
+nav div {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 11px;
+}
+nav a {
+  background: #e69d92;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  display: flex;
+  background: radial-gradient(circle at 10px 10px, #e69d92, #4f2207);
+  box-sizing: unset;
+  box-shadow: 0 0 10px #4d4dff;
+}
+a img {
+            height: 20px;
+            margin: auto;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(112deg) brightness(104%) contrast(103%);
+        }
+section {
+    flex-grow: 1;
+    margin-left: 2em;
+    border: 1px solid #2386f0;
+    padding: 15px;
+    background: #a9c2ff;
+    border-radius: 10px;
+    height: calc(100vh - 120px);
+    overflow: auto;
+    box-shadow: 0 0 10px, inset 0 0 10px white;
+}
+
+        hr {
+            border-style: dashed;
+            border-color: #c8fdf3;
+            margin: 2px 10% 4px;
+        }
+        blockquote {
+            margin: 1em;
+            font-style: italic;
+            text-indent: 1.5em;
+        }
+        section p {
+            margin: 0;
+            padding: 0.5em;
+            text-indent: 1em;
+
+        }
+        #reviews p {
+            padding-bottom: 0;
+        }
+        #reviews p.io {
+            text-align: right;
+            padding: 0 0.5em 0.5em;
+        }
+        footer {
+  text-align: center;
+  margin-top: 5px;
+}
+    </style>
+    <body>
+        <div id="container">
+            <header>
+                <h1>The Dinner</h1>
+                <p>Eat... at your own risk...</p>
+            </header>
+            <main>
+                <aside> <div id="side">
+                        <h2>Game Info</h2>
+                        <hr>
+                        <p>2023<br>Twine/Harlowe<br>Surreal/Horror<br>Hyperlink<br>EN<br>~5min</p>
+                        <hr>
+                        <nav>
+                            <h2>Links</h2>
+                            <div>
+                                <a href="https://manonamora.itch.io/the-dinner" target="_blank" title="Play the Game on Itch.io"><img src="../../../assets/icons/itch-io.svg" alt="Itch.io"></a>
+                                <a href="https://ifdb.org/viewgame?id=rjvh70e0ap1rta7t" target="_blank" title="Read some reviews"><img src="../../../assets/icons/ifdb.png" alt="IFDB"></a>
+                                <a href="https://manonamora-if.tumblr.com/post/726026751791316992" target="_blank"><img src="../../../assets/icons/tumblr.svg" alt=""></a>
+                            </div>
+                        </nav>                    
+                </div></aside>
+                <section>
+                    <article id="synopsis">
+                        <h2>Synopsis</h2>
+                        <hr>
+                        <blockquote>An eerie foodie experience.</blockquote>
+                        <p><u>Warnings:</u> body horror, inflicted pain, food.</p>
+                    </article>
+                    <article id="about">
+                        <h2>About...</h2>
+                        <hr>
+                        <p><em>The Dinner</em> is a short interactive story, first created for the <em>Single Choice Jam</em> and the <em>Orifice Jam</em>, putting you in the shoes of a diner at a fancy restaurant.</p>
+                        <p>The story focuses on the food and the diner's mouth, particularly on bringing those two together: the act of eating. Between delectable descriptions and the diner's reaction of the different courses, the added restrictive and forceful gameplay creates an uncomfortable atmosphere.</p>
+                        <p>This piece was inspired first and foremost by my deep love for food, displayed in the choice of meals described. The scene in <em>Spirited Away</em> (Hayao Miyazaki, 2001), where the parents transform into pigs, or the characters of Remy and Ego in <em>Ratatouille</em> (Brad Bird, 2007) reacting when eating, were always in the back of my mind while writing. Other works that inspired the writing include the <em>Hannibal</em> movies and series (Jonathan Demme, 1991;	Ridley Scott, 2001; Brett Ratner, 2002;	Bryan Fuller, 2013-2015), <em>Delicatessen</em> (Jean-Pierre Jeunet & Marc Caro, 1991) and <em>Grave</em> (Julia Ducournau, 2016).</p>
+                        <p>Unfortunately, a large portion of the work was lost during its creation (my writing file was corrupted). Only a few re-written passages with an alternative ending are still playable. As I still have my original notes, which includes the complete course list of meals and planned endings, I do hope to come back to this project soon to update it.</p>
+                    </article>
+                    <article id="reviews">
+                        <h2>Reviews</h2>
+                        <hr>
+                        <p><em>I loved the descriptions of the courses, and the sort of clinical accounting of the guest's sensations as they consumed the food. It felt odd in a way that I really liked.</em></p><p class="io">- lavieenmeow</p>
+                        <p><em>Ooh, what an uncomfortable story. I enjoyed it quite a bit. The juxtaposition of sumptuous descriptions of the food and the revile that our main character responded with was interesting and off-balancing. Amusingly, I misread the TW as "inflicted food", laughed to myself, and then discovered while playing that being given the command to "Eat the Course" was actually a bit upsetting--in a good way!</em></p><p class="io">- PetricakeGames</p>
+                        <p><em>Being a short one-choice game, it's as linear as one would expect for now, but the immaculate descriptions paint a vivid imagery on the reader's mind, pulling them into the main character's mind/POV. Excellent narrative overall.</em></p><p class="io">- Hyacinthos</p>
+
+                    </article>
+                </section>
+            </main>
+            <footer>© manonamora ~ 2022-2025</footer>
+        </div>
+    </body>
+
+<!-- Mirrored from manonamora.neocities.org/pages/interactivefiction/games/dinner by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Jun 2025 10:33:06 GMT -->
+</html>

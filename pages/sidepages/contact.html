@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    
+<!-- Mirrored from manonamora.neocities.org/pages/sidepages/contact by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Jun 2025 10:33:09 GMT -->
+<head>
+        <title>Where me? - manonamora's computer</title>
+
+        <meta charset="UFT-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <meta name="description" content="My personal website, filled with stuff I've made and enjoy">
+        <meta name='url' content='../../index.html'>
+        <meta name='keywords' content='gamedev, interactive fiction, fiction interactive, IF, community, indie dev, twine'>
+        <meta name='language' content='EN'>
+
+        <meta property="og:title" content="manonamora.neocities.org">
+        <meta property="og:description" content="My personal website, filled with stuff I've made and enjoy">
+        <meta property="og:image" content="assets/titlecard.html">
+        <meta name='og:url' content='../../home/index.html'>
+
+        <meta name='pagename' content="manonamora's computer">
+
+        <link rel="alternate" href="../../feed.xml" type="application/rss+xml" title="manonamora's computer update log">
+        <link rel="alternate" href="../../feed.xml" type="application/atom+xml" title="manonamora's computer update log">
+
+        <link rel="icon" type="image/x-icon" href="assets/icons/mtp-logo.html">
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: #7d7d7d;
+        }
+        #container {
+            position: absolute;
+            top: 74px;
+            margin: auto;
+            left: 19px;
+            background: #f0f0f0;
+            padding: 4px;
+            border-color: white gray gray white;
+            border-width: 2px;
+            border-style: solid;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: fit-content;
+            height: fit-content;
+        }
+        section {
+            margin: 5px;
+            margin-right: 5px;
+        }
+        .contact-line {
+            display: flex;
+            width: fit-content;
+            padding: 2px 5px 2px 13px;
+            background: #f0f0f0;
+        }
+        .fake-dropbox {
+            width: 100px;
+            padding: 2px;
+            position: relative;
+            background: white;
+            margin-bottom: 1px;
+            border-style: solid;
+            margin-top: 1px;
+            border-color: #808080 #ffffff #ffffff #808080;
+            border-width: 2px 2px;
+            padding: 0px 3px;
+            margin-right: 4px;
+            pointer-events: none;
+        }
+        .fake-triangle {
+            width: 17px;
+            height: 17px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #f0f0f0;
+            border: 2px solid;
+            border-color: #ffffff  #808080 #808080 #ffffff ;
+        }
+        .fake-triangle::after {
+            content: '';
+            display: block;
+            width: 8px;
+            height: 8px;
+            background: #393939;
+            clip-path: polygon(100% 100%, 0 0, 100% 0);
+            transform: rotate(135deg);
+            position: absolute;
+            top: -4px;
+            bottom: 0;
+            left: 1px;
+            right: 0;
+            margin: auto;
+        }
+        .text-block {
+            width: 250px;
+            background: white;
+            margin-bottom: 1px;
+            border-style: solid;
+            margin-top: 1px;
+            border-color: #808080 #ffffff #ffffff #808080;
+            border-width: 2px 2px;
+            padding: 0px 3px;
+        }
+        .text-block a {
+            color: #085301;
+            text-decoration-style: dashed;
+            text-decoration-color: #0ea03b;
+        }
+        .sections-header {
+            width: 250px;
+            background: white;
+            margin-bottom: 1px;
+            border-style: solid;
+            margin-top: 1px;
+            border-color: #808080 #ffffff #ffffff #808080;
+            border-width: 2px 2px;
+            padding: 0px 3px;
+            pointer-events: none;
+        }
+        .fake-input {
+            width: 100%;
+            background: white;
+            margin-bottom: 1px;
+            border-style: solid;
+            margin-top: 1px;
+            border-color: #808080 #ffffff #ffffff #808080;
+            border-width: 2px 2px;
+            padding: 0px 3px;
+            pointer-events: none;
+        }
+        #me > #first-line {
+            display: flex;
+        }
+        #first-line .fake-input {
+            flex-grow: 1;
+        }
+        #name {
+            margin-right: 12px;
+        }
+        .description {
+            width: 382px;
+        }
+        #titlebar {
+            background: linear-gradient(to right, rgb(8, 83, 1) 0%, rgb(19, 227, 110) 100%);
+            color: white;
+            display: flex;
+            height: 20px;
+            align-items: center;
+            padding: 2px;
+            font-size: 14px;
+        }
+        #titlebar img {
+            width: 24px;
+            margin-right: 5px;
+        }
+        .title {
+            flex-grow: 1;
+            pointer-events: none;
+        }
+        .title h1 {
+            font-size: 100%;
+        }
+        .close {
+            margin-right: 1px;
+            font-size: 12px;
+            cursor: pointer;
+            background-color: rgb(192, 192, 192);
+            color: black;
+            border-style: solid;
+            border-width: 2px;
+            border-color: white black black white;
+            width: 18px;
+            box-sizing: border-box;
+            height: 18px;
+            text-decoration: none;
+            font-family: 'Tahoma';
+            text-align: center;
+        }
+        hr {
+            border-color: rgb(255, 255, 255) rgb(128, 128, 128) rgb(128, 128, 128) rgb(255, 255, 255);
+            width: 97%;
+            margin: auto;
+        }
+        #background {
+            background: linear-gradient( lime, transparent ), linear-gradient( 90deg, #00b5ff, transparent ), linear-gradient( -90deg, #f40, transparent );
+            background-blend-mode: screen;
+            width: 100vw;
+            height: 100vh;
+            opacity: 0.7;
+        }
+        #background::after {
+            content: '';
+            position: absolute;
+            width: inherit;
+            height: inherit;
+            background-image: url('../../assets/bgs/asfalt-dark.png');
+            mix-blend-mode: overlay;
+        }
+    </style>
+    <body>
+        <div id="background"></div>
+        <div id="container">
+            <header id="titlebar">
+                <img src="../../assets/icons/contact.ico" alt="">
+                <div class="title"><h1>Contact</h1></div>
+                <a class="close" href="../../index.html">X</a>
+            </header>
+            <main>
+                <section id="me">
+                    <div id="first-line">
+                        <div id="name" class="fake-input">Manon (she/her)</div>
+                        <div id="username" class="fake-input">manonamora</div>
+                    </div>
+                    <div class="fake-input description">Indie Game Dev</div>
+                    <div class="fake-input description">Open to inquiries or questions!</div>
+                </section>
+                <hr>
+                <section id="contact">
+                    <div class="sections-header">Contact</div>
+                    <div id="email" class="contact-line">
+                        <div class="fake-dropbox">Email<div class="fake-triangle"></div></div>
+                        <div class="text-block"><a href="mailto:manonamora.games@gmail.com">manonamora.games@gmail.com</a></div>
+                    </div>
+                    <div id="contact-tumblr" class="contact-line">
+                        <div class="fake-dropbox">Tumblr<div class="fake-triangle"></div></div>
+                        <div class="text-block"><a href="https://manonamora-if.tumblr.com/ask">manonamora-if/ask</a></div>
+                    </div>
+                    <div id="contact-neo" class="contact-line">
+                        <div class="fake-dropbox">Discord<div class="fake-triangle"></div></div>
+                        <div class="text-block"><a href="https://discord.gg/6arc3tDfen">Personal server</a></div>
+                    </div>
+                    <div id="contact-discord" class="contact-line">
+                        <div class="fake-dropbox">Discord<div class="fake-triangle"></div></div>
+                        <div class="text-block"><a href="https://discord.gg/NP6c6aAKfK">Neo-Interactive server</a></div>
+                    </div>
+                    <!--In the future: an actual contact form-->
+                </section>
+                <hr>
+                <section id="where-link">
+                    <div class="sections-header">Find Me On...</div>
+                    <div id="itch" class="contact-line">
+                        <div class="fake-dropbox">Itch.io<div class="fake-triangle"></div></div>
+                        <div class="text-block"><a href="https://manonamora.itch.io/">manonamora.itch.io</a></div>
+                    </div>
+                    <div id="github" class="contact-line">
+                        <div class="fake-dropbox">Github<div class="fake-triangle"></div></div>
+                        <div class="text-block"><a href="https://github.com/manonamora">github.com/manonamora</a></div>
+                    </div>
+                    <div id="ifdb" class="contact-line">
+                        <div class="fake-dropbox">IFDB<div class="fake-triangle"></div></div>
+                        <div class="text-block"><a href="https://ifdb.org/showuser?id=r8zj2ybma6r0emy4">ifdb.org/manonamora</a></div>
+                    </div>
+
+                    <div id="tumblr" class="contact-line">
+                        <div class="fake-dropbox">Tumblr<div class="fake-triangle"></div></div>
+                        <div class="text-block"><a href="https://manonamora-if.tumblr.com/">@manonamora-if</a></div>
+                    </div>
+                    <div id="mastodon" class="contact-line">
+                        <div class="fake-dropbox">Mastodon<div class="fake-triangle"></div></div>
+                        <div class="text-block"><a rel="me" href="https://mastodon.gamedev.place/@manonamora">gamedev.place/manonamora</a></div>
+                    </div>
+                    <div id="bluesky" class="contact-line">
+                        <div class="fake-dropbox">BlueSky<div class="fake-triangle"></div></div>
+                        <div class="text-block"><a href="https://bsky.app/profile/manonamora.bsky.social">manonamora.bsky</a></div>
+                    </div>
+
+                    <div id="intfic" class="contact-line">
+                        <div class="fake-dropbox">IF Forum<div class="fake-triangle"></div></div>
+                        <div class="text-block"><a href="https://intfiction.org/u/manonamora/summary">IntFiction.org/manonamora</a></div>
+                    </div>
+                    <div id="fic-int" class="contact-line">
+                        <div class="fake-dropbox">IF Forum<div class="fake-triangle"></div></div>
+                        <div class="text-block"><a href="https://forum.fiction-interactive.fr/u/manonamora/summary">Fiction-Interactive.fr/manonamora</a></div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+
+<!-- Mirrored from manonamora.neocities.org/pages/sidepages/contact by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Jun 2025 10:33:09 GMT -->
+</html>
